@@ -14,7 +14,7 @@ import java.text.ParseException;
 import static org.bmbgarage.util.ErrorUtils.sendError;
 import static org.bmbgarage.util.ErrorUtils.sendMessage;
 
-@WebServlet("/edit-car.jsp")
+@WebServlet("/edit-car")
 @MultipartConfig
 public class EditCarServlet extends HttpServlet {
 
@@ -36,7 +36,7 @@ public class EditCarServlet extends HttpServlet {
                 id = Integer.parseInt(request.getParameter("id"));
             }
 
-            String license_plate = request.getParameter("licenseplate");
+            String licenseplate = request.getParameter("licenseplate");
             String brand = request.getParameter("brand");
             String carmodel = request.getParameter("carmodel");
             Date dateregistration = Date.valueOf(request.getParameter("dateregistration"));
@@ -46,7 +46,7 @@ public class EditCarServlet extends HttpServlet {
             Database.connect();
 
             int affectedRows = Database.jdbi.withExtension(CarDao.class,
-                    dao -> dao.addCar(license_plate, brand, carmodel, dateregistration, price, finalFilename2));
+                    dao -> dao.addCar(licenseplate, brand, carmodel, dateregistration, price, finalFilename2));
             sendMessage("Coche registrado correctamente", response);
 
         } catch (ClassNotFoundException cnfe) {
