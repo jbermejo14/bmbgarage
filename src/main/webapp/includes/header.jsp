@@ -38,7 +38,7 @@
     <div class="navbar bg-black shadow-sm">
         <div class="container">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/bermecars" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="/bmbgarage" class="nav-link px-2 text-secondary">Home</a></li>
               <li><a href="user-profile.jsp" class="nav-link px-2 text-white">Profile</a></li>
         </div>
         <button type="button" class="btn btn-outline-light me-5"><a href="logout" title="logout" class="text-white text-decoration-none">Logout</a></button>
@@ -51,7 +51,7 @@
     <div class="navbar bg-dark shadow-sm">
         <div class="container">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="/bermecars" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="/bmbgarage" class="nav-link px-2 text-secondary">Home</a></li>
               <li><a href="user-profile.jsp" class="nav-link px-2 text-white">Profile</a></li>
               <li><a href="edit-car.jsp" class="nav-link px-2 text-white">Edit</a></li>
         </div>
