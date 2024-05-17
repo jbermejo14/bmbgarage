@@ -1,6 +1,7 @@
 package org.bmbgarage.dao;
 
 import org.bmbgarage.domain.Car;
+import org.bmbgarage.domain.Database;
 import org.bmbgarage.domain.User;
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;
