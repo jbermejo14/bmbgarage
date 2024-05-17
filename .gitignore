@@ -8,6 +8,9 @@ target/
 *.iws
 *.iml
 *.ipr
+apache-tomcat-9.0.89
+apache-tomcat-9.0.87
+
 
 ### Eclipse ###
 .apt_generated
