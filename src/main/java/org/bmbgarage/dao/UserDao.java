@@ -19,8 +19,8 @@ public interface UserDao {
     @UseRowMapper(org.bmbgarage.dao.UserMapper.class)
     User getUser(String username, String password);
 
-    @SqlUpdate("INSERT INTO users (username, password, telephone, role) VALUES (?, ?, ?, ?)")
-    int addUser(String username, String password, int telephone, String role);
+    @SqlUpdate("INSERT INTO users (username, email, phonenumber, userpassword, role) VALUES (?, ?, ?, ?, ?)")
+    int addUser(String username, String email, String phonenumber, String userpassword, String role);
 
     @SqlUpdate("UPDATE users SET username = ?, password = ?, telephone = ? WHERE id = ?")
     int updateUser(String username, String password, int telephone, int id);

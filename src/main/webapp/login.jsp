@@ -99,7 +99,7 @@ $(document).ready(function() {
             statusCode: {
                 200: function(response) {
                     if (response === "ok") {
-                        window.location.href = "/org.bmbgarage";
+                        window.location.href = "/bmbgarage";
                     } else {
                         $("#result").html(response);
                     }
