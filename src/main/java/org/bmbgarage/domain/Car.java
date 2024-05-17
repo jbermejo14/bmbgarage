@@ -12,8 +12,7 @@ public class Car {
     private String license_plate;
     private String brand;
     private String model;
-    private String country;
-    private int year;
+    private int date;
     private float price;
     private String photo;
 }
