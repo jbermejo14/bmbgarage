@@ -63,7 +63,7 @@
           <div class="card shadow-sm h-max w-100">
             <div class="card-body">
               <p class="card-text"><strong><%= car.getBrand() %></strong></p>
-              <p class="card-text"><%= car.getCarModel() %></p>
+              <p class="card-text"><%= car.getCarmodel() %></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="view-car.jsp?id=<%= car.getId() %>" type="button" class="btn btn-sm btn-outline-primary">Ver</a></div>
