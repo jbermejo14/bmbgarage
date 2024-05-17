@@ -23,8 +23,8 @@ public interface CarDao {
     @UseRowMapper(CarMapper.class)
     List<Car> getCars(@Bind("searchTerm") String searchTerm);
 
-    @SqlUpdate("INSERT INTO cars (client, license_plate, brand, model, dateregistration, price, image) VALUES (?, ?, ?, ?, ?, ?, ?)")
-    int addCar(Client client, String license_plate, String brand, String model, int dateregistration, float price, String image);
+    @SqlUpdate("INSERT INTO cars (license_plate, brand, model, dateregistration, price, image) VALUES (?, ?, ?, ?, ?, ?, ?)")
+    int addCar(String license_plate, String brand, String model, int dateregistration, float price, String image);
 
     @SqlUpdate("UPDATE cars SET license_plate = ?, brand = ?, carmodel = ?, dateregistration = ?, price = ?, image = ? WHERE id = ?")
     int updateCar(String license_plate, String brand, String carmodel, int dateregistration, float price, String image, int id);

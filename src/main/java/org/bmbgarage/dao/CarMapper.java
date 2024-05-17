@@ -13,11 +13,8 @@ public class CarMapper implements RowMapper<Car> {
     @Override
     public Car map(ResultSet rs, StatementContext ctx) throws SQLException {
 
-        Client client = Database.jdbi.withExtension(ClientDao.class, dao -> dao.getClient(rs.getInt("id")));
-
         return new Car(rs.getInt("id"),
-                client,
-                rs.getString("license_plate"),
+                rs.getString("licenseplate"),
                 rs.getString("brand"),
                 rs.getString("carmodel"),
                 rs.getInt("dateregistration"),
