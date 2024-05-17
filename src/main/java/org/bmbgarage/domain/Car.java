@@ -12,8 +12,8 @@ public class Car {
     private User user;
     private String license_plate;
     private String brand;
-    private String car_model;
-    private int date_registration;
+    private String carmodel;
+    private int dateregistration;
     private float price;
     private String image;
 }
