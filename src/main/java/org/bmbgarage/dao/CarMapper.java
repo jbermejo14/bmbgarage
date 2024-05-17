@@ -19,8 +19,8 @@ public class CarMapper implements RowMapper<Car> {
                 client,
                 rs.getString("license_plate"),
                 rs.getString("brand"),
-                rs.getString("car_model"),
-                rs.getInt("date_registration"),
+                rs.getString("carmodel"),
+                rs.getInt("dateregistration"),
                 rs.getFloat("price"),
                 rs.getString("image"));
     }
