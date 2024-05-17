@@ -8,15 +8,15 @@ import java.util.List;
 public interface UserDao {
 
     @SqlQuery("SELECT * FROM users")
-    @UseRowMapper(com.bermecar.dao.UserMapper.class)
+    @UseRowMapper(org.bmbgarage.dao.UserMapper.class)
     List<User> getAllUsers();
 
     @SqlQuery("SELECT * FROM users WHERE id = ?")
-    @UseRowMapper(com.bermecar.dao.UserMapper.class)
+    @UseRowMapper(org.bmbgarage.dao.UserMapper.class)
     User getUser(int id);
 
     @SqlQuery("SELECT * FROM users WHERE username = ? AND password = ?")
-    @UseRowMapper(com.bermecar.dao.UserMapper.class)
+    @UseRowMapper(org.bmbgarage.dao.UserMapper.class)
     User getUser(String username, String password);
 
     @SqlUpdate("INSERT INTO users (username, password, telephone, role) VALUES (?, ?, ?, ?)")
