@@ -13,8 +13,9 @@ public class UserMapper implements RowMapper<User> {
     public User map(ResultSet rs, StatementContext ctx) throws SQLException {
         return new User(rs.getInt("id"),
                 rs.getString("username"),
-                rs.getString("password"),
-                rs.getInt("telephone"),
-                rs.getString("role"));
+                rs.getString("email"),
+                rs.getString("phone_number"),
+                rs.getString("user_password"),
+                rs.getString("rol"));
     }
 }
