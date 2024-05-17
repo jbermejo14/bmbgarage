@@ -190,7 +190,7 @@
       <tr>
         <td>--Password</td>
         <td></td>
-        <td>Password for client account set by --User parameter</td>
+        <td>Password for user account set by --User parameter</td>
       </tr>
       <tr>
         <td>--ServiceUser</td>
@@ -198,7 +198,7 @@
         <td>Specifies the name of the account under which the service should
             run. Use an account name in the form
             <code>DomainName\UserName</code>. The service process will be logged
-            on as this client. if the account belongs to the built-in domain, you
+            on as this user. if the account belongs to the built-in domain, you
             can specify <code>.\UserName</code>. Note that the Service Control
             Manager does not accept localised forms of the standard names so to
             use them you need to specify <code>NT Authority\LocalService</code>,
@@ -208,7 +208,7 @@
       <tr>
         <td>--ServicePassword</td>
         <td></td>
-        <td>Password for client account set by --ServiceUser parameter</td>
+        <td>Password for user account set by --ServiceUser parameter</td>
       </tr>
       <tr>
         <td>--LibraryPath</td>
@@ -407,8 +407,8 @@
 <p>
 The safest way to manually install the service is to use the provided
 <b>service.bat</b> script. Administrator privileges are required to run this
-script. If necessary, you can use the <code>/client</code> switch to specify
-a client to use for the installation of the service.
+script. If necessary, you can use the <code>/user</code> switch to specify
+a user to use for the installation of the service.
 </p>
 <p>
 <strong>NOTE:</strong> If User Account Control (UAC) is enabled you will be

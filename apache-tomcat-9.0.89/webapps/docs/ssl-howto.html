@@ -60,7 +60,7 @@ to configure the primary web server to handle the SSL connections from users.
 Typically, this server will negotiate all SSL-related functionality, then
 pass on any requests destined for the Tomcat container only after decrypting
 those requests.  Likewise, Tomcat will return cleartext responses, that will
-be encrypted before being returned to the client's browser.  In this environment,
+be encrypted before being returned to the user's browser.  In this environment,
 Tomcat knows that communications between the primary web server and the
 client are taking place over a secure connection (because your application
 needs to be able to ask about this), but it does not participate in the
@@ -106,7 +106,7 @@ including some that offer certificates at no cost.</p>
 
 <p>Java provides a relatively simple command-line tool, called
 <code>keytool</code>, which can easily create a "self-signed" Certificate.
-Self-signed Certificates are simply client generated Certificates which have not
+Self-signed Certificates are simply user generated Certificates which have not
 been signed by a well-known CA and are, therefore, not really guaranteed to be
 authentic at all. While self-signed certificates can be useful for some testing
 scenarios, they are not suitable for any form of production use.</p>
@@ -171,7 +171,7 @@ self-signed Certificate, execute the following from a terminal command line:</p>
 <p>(The RSA algorithm should be preferred as a secure algorithm, and this
 also ensures general compatibility with other servers and components.)</p>
 
-<p>This command will create a new file, in the home directory of the client
+<p>This command will create a new file, in the home directory of the user
 under which you run it, named "<code>.keystore</code>".  To specify a
 different location or filename, add the <code>-keystore</code> parameter,
 followed by the complete pathname to your keystore file,
@@ -297,7 +297,7 @@ this:</p>
            port="8443" maxThreads="200"
            maxParameterCount="1000"
            scheme="https" secure="true" SSLEnabled="true"
-           keystoreFile="${client.home}/.keystore" keystorePass="changeit"
+           keystoreFile="${user.home}/.keystore" keystorePass="changeit"
            clientAuth="false" sslProtocol="TLS"/&gt;</code></pre></div>
 <p>
   Note: If tomcat-native is installed, the configuration will use JSSE with
@@ -539,7 +539,7 @@ SSL communications, and what to do about them.</p>
 
     <p>A likely explanation is that Tomcat cannot find the keystore file
     where it is looking.  By default, Tomcat expects the keystore file to
-    be named <code>.keystore</code> in the client home directory under which
+    be named <code>.keystore</code> in the user home directory under which
     Tomcat is running (which may or may not be the same as yours :-).  If
     the keystore file is anywhere else, you will need to add a
     <code>keystoreFile</code> attribute to the <code>&lt;Connector&gt;</code>

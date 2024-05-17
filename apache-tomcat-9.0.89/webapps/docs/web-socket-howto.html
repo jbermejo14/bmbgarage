@@ -22,7 +22,7 @@
 <p>The write timeout used when sending WebSocket messages in blocking mode
    defaults to 20000 milliseconds (20 seconds). This may be changed by setting
    the property <code>org.apache.tomcat.websocket.BLOCKING_SEND_TIMEOUT</code>
-   in the client properties collection attached to the WebSocket session. The
+   in the user properties collection attached to the WebSocket session. The
    value assigned to this property should be a <code>Long</code> and represents
    the timeout to use in milliseconds. For an infinite timeout, use
    <code>-1</code>.</p>
@@ -30,7 +30,7 @@
 <p>The time Tomcat waits for a peer to send a WebSocket session close message
    after Tomcat has sent a close message to the peer defaults to 30000
    milliseconds (30 seconds). This may be changed by setting the property
-   <code>org.apache.tomcat.websocket.SESSION_CLOSE_TIMEOUT</code> in the client
+   <code>org.apache.tomcat.websocket.SESSION_CLOSE_TIMEOUT</code> in the user
    properties collection attached to the WebSocket session. The value assigned
    to this property should be a <code>Long</code> and represents the timeout to
    use in milliseconds. Values less than or equal to zero will be ignored.</p>
@@ -39,7 +39,7 @@
    close is abnormal defaults to 50 milliseconds. This may be changed by setting
    the property
    <code>org.apache.tomcat.websocket.ABNORMAL_SESSION_CLOSE_SEND_TIMEOUT</code>
-   in the client properties collection attached to the WebSocket session. The
+   in the user properties collection attached to the WebSocket session. The
    value assigned to this property should be a <code>Long</code> and represents
    the timeout to use in milliseconds. Values less than or equal to zero will be
    ignored.</p>
@@ -47,7 +47,7 @@
 <p>In addition to the <code>Session.setMaxIdleTimeout(long)</code> method which
    is part of the Java WebSocket API, Tomcat provides greater control of the
    timing out the session due to lack of activity. Setting the property
-   <code>org.apache.tomcat.websocket.READ_IDLE_TIMEOUT_MS</code> in the client
+   <code>org.apache.tomcat.websocket.READ_IDLE_TIMEOUT_MS</code> in the user
    properties collection attached to the WebSocket session will trigger a
    session timeout if no WebSocket message is received for the specified number
    of milliseconds. Setting the property
@@ -96,7 +96,7 @@
 <p>When using the WebSocket client to connect to secure server endpoints, the
    client SSL configuration is controlled by the <code>userProperties</code>
    of the provided <code>javax.websocket.ClientEndpointConfig</code>. The
-   following client properties are supported:</p>
+   following user properties are supported:</p>
    <ul>
      <li><code>org.apache.tomcat.websocket.SSL_CONTEXT</code></li>
      <li><code>org.apache.tomcat.websocket.SSL_PROTOCOLS</code></li>
@@ -113,7 +113,7 @@
 <p>For secure server end points, host name verification is enabled by default.
    To bypass this verification (not recommended), it is necessary to provide a
    custom <code>SSLContext</code> via the
-   <code>org.apache.tomcat.websocket.SSL_CONTEXT</code> client property. The
+   <code>org.apache.tomcat.websocket.SSL_CONTEXT</code> user property. The
    custom <code>SSLContext</code> must be configured with a custom
    <code>TrustManager</code> that extends
    <code>javax.net.ssl.X509ExtendedTrustManager</code>. The desired verification
@@ -129,7 +129,7 @@
    </p>
 
 <p>When using the WebSocket client to connect to a server endpoint that requires
-   BASIC or DIGEST authentication, the following client properties must be set:
+   BASIC or DIGEST authentication, the following user properties must be set:
    </p>
    <ul>
      <li><code>org.apache.tomcat.websocket.WS_AUTHENTICATION_USER_NAME</code>
@@ -139,14 +139,14 @@
    </ul>
    <p>Optionally, the WebSocket client can be configured only to send
    credentials if the server authentication challenge includes a specific realm
-   by defining that realm in the optional client property:</p>
+   by defining that realm in the optional user property:</p>
    <ul>
      <li><code>org.apache.tomcat.websocket.WS_AUTHENTICATION_REALM</code></li>
    </ul>
 
 <p>When using the WebSocket client to connect to a server endpoint via a forward
    proxy (also known as a gateway) that requires BASIC or DIGEST authentication,
-   the following client properties must be set:
+   the following user properties must be set:
    </p>
    <ul>
      <li><code>org.apache.tomcat.websocket.WS_PROXY_AUTHENTICATION_USER_NAME
@@ -156,7 +156,7 @@
    </ul>
    <p>Optionally, the WebSocket client can be configured only to send
    credentials if the server authentication challenge includes a specific realm
-   by defining that realm in the optional client property:</p>
+   by defining that realm in the optional user property:</p>
    <ul>
      <li><code>org.apache.tomcat.websocket.WS_PROXY_AUTHENTICATION_REALM</code>
      </li>

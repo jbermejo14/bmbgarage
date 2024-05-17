@@ -111,11 +111,11 @@
     </td></tr><tr><td><code class="attributeName">maxSavePostSize</code></td><td>
       <p>The maximum size in bytes of the POST which will be saved/buffered by
       the container during FORM or CLIENT-CERT authentication. For both types
-      of authentication, the POST will be saved/buffered before the client is
+      of authentication, the POST will be saved/buffered before the user is
       authenticated. For CLIENT-CERT authentication, the POST is buffered for
       the duration of the SSL handshake and the buffer emptied when the request
-      is processed. For FORM authentication the POST is saved whilst the client
-      is re-directed to the login form and is retained until the client
+      is processed. For FORM authentication the POST is saved whilst the user
+      is re-directed to the login form and is retained until the user
       successfully authenticates or the session associated with the
       authentication request expires. The limit can be disabled by setting this
       attribute to -1. Setting the attribute to zero will disable the saving of
@@ -434,7 +434,7 @@
       <p>If set to <code>true</code>, the authentication will be done in Tomcat.
       Otherwise, the authenticated principal will be propagated from the native
       webserver and used for authorization in Tomcat. </p>
-      <p>The web server must send the client principal (username) as a request
+      <p>The web server must send the user principal (username) as a request
       <i>attribute</i> named <code>REMOTE_USER</code>.</p>
       <p>Note that this principal will have no roles associated with it.</p>
       <p>The default value is <code>true</code>. If
@@ -446,7 +446,7 @@
       in Tomcat. If the web application has one or more security constraints,
       authorization will then be performed by Tomcat and roles assigned to the
       authenticated principal. If the appropriate Tomcat Realm for the request
-      does not recognise the provided client name, a Principal will be still be
+      does not recognise the provided user name, a Principal will be still be
       created but it will have no roles. The default value is
       <code>false</code>.</p>
     </td></tr><tr><td><code class="attributeName">useVirtualThreads</code></td><td>

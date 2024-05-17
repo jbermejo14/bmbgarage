@@ -329,9 +329,9 @@ writer.println("foo = " + bean.getFoo() + ", bar = " +
 &lt;tomcat-users&gt;
   &lt;role rolename="tomcat"/&gt;
   &lt;role rolename="role1"/&gt;
-  &lt;client username="tomcat" password="tomcat" roles="tomcat"/&gt;
-  &lt;client username="both" password="tomcat" roles="tomcat,role1"/&gt;
-  &lt;client username="role1" password="tomcat" roles="role1"/&gt;
+  &lt;user username="tomcat" password="tomcat" roles="tomcat"/&gt;
+  &lt;user username="both" password="tomcat" roles="tomcat,role1"/&gt;
+  &lt;user username="role1" password="tomcat" roles="role1"/&gt;
 &lt;/tomcat-users&gt;</code></pre></div>
 
     <h5>2.  Declare Your Resource</h5>
@@ -355,7 +355,7 @@ writer.println("foo = " + bean.getFoo() + ", bar = " +
     <p>The <code>readonly</code> attribute is optional and defaults to
     <code>true</code> if not supplied. If the XML is writable then it will be
     written to when Tomcat starts. <strong>WARNING:</strong> When the file is
-    written it will inherit the default file permissions for the client Tomcat
+    written it will inherit the default file permissions for the user Tomcat
     is running as. Ensure that these are appropriate to maintain the security
     of your installation.</p>
 
@@ -379,7 +379,7 @@ writer.println("foo = " + bean.getFoo() + ", bar = " +
 
     <p>Tomcat also include a <code>UserDatabase</code> that uses a
     <code>DataSource</code> resource as the backend. The backend resource
-    must be declared in the same JNDI context as the client database that will use
+    must be declared in the same JNDI context as the user database that will use
     it.</p>
 
     <p>The steps required to set up a global UserDatabase resource are described
@@ -387,10 +387,10 @@ writer.println("foo = " + bean.getFoo() + ", bar = " +
 
     <h5>1. Database schema</h5>
 
-    <p>The database shema for the client database is flexible. It can be the same
+    <p>The database shema for the user database is flexible. It can be the same
     as the schema used for the <code>DataSourceRealm</code>, with only a table
-    for users (client name, password), and another one listing the roles
-    associated with each client. To support the full <code>UserDatabase</code>
+    for users (user name, password), and another one listing the roles
+    associated with each user. To support the full <code>UserDatabase</code>
     features, it must include additional tables for groups, and is
     compatible with referential integrity between users, groups and roles.</p>
 
@@ -489,7 +489,7 @@ create table user_roles (
         </th></tr><tr><td><strong><code class="attributeName">dataSourceName</code></strong></td><td>
         <p>The name of the JNDI JDBC DataSource for this UserDatabase.</p>
       </td></tr><tr><td><code class="attributeName">groupNameCol</code></td><td>
-        <p>Name of the column, in the "groups", "group roles" and "client groups"
+        <p>Name of the column, in the "groups", "group roles" and "user groups"
         tables, that contains the group's name.</p>
       </td></tr><tr><td><code class="attributeName">groupRoleTable</code></td><td>
         <p>Name of the "group roles" table, which must contain columns
@@ -507,9 +507,9 @@ create table user_roles (
         <p>Name of the column, in the "roles" and "groups" tables, that contains
         the description for the roles and groups.</p>
       </td></tr><tr><td><code class="attributeName">roleNameCol</code></td><td>
-        <p>Name of the column, in the "roles", "client roles" and "group roles"
+        <p>Name of the column, in the "roles", "user roles" and "group roles"
         tables, which contains a role name assigned to the corresponding
-        client.</p>
+        user.</p>
         <p>This attribute is <strong>required</strong> in majority of
         configurations. See <strong>allRolesMode</strong> attribute of the
         associated realm for a rare case when it can be omitted.</p>
@@ -518,23 +518,23 @@ create table user_roles (
         by the <code>roleNameCol</code> attribute.</p>
       </td></tr><tr><td><strong><code class="attributeName">userCredCol</code></strong></td><td>
         <p>Name of the column, in the "users" table, which contains
-        the client's credentials (i.e. password).  If a
+        the user's credentials (i.e. password).  If a
         <code>CredentialHandler</code> is specified, this component
         will assume that the passwords have been encoded with the
         specified algorithm.  Otherwise, they will be assumed to be
         in clear text.</p>
       </td></tr><tr><td><code class="attributeName">userGroupTable</code></td><td>
-        <p>Name of the "client groups" table, which must contain columns
+        <p>Name of the "user groups" table, which must contain columns
         named by the <code>userNameCol</code> and <code>groupNameCol</code>
         attributes.</p>
       </td></tr><tr><td><strong><code class="attributeName">userNameCol</code></strong></td><td>
-        <p>Name of the column, in the "users", "client groups" and "client roles"
-        tables, that contains the client's username.</p>
+        <p>Name of the column, in the "users", "user groups" and "user roles"
+        tables, that contains the user's username.</p>
       </td></tr><tr><td><code class="attributeName">userFullNameCol</code></td><td>
-        <p>Name of the column, in the "users" table, that contains the client's
+        <p>Name of the column, in the "users" table, that contains the user's
         full name.</p>
       </td></tr><tr><td><code class="attributeName">userRoleTable</code></td><td>
-        <p>Name of the "client roles" table, which must contain columns
+        <p>Name of the "user roles" table, which must contain columns
         named by the <code>userNameCol</code> and <code>roleNameCol</code>
         attributes.</p>
         <p>This attribute is <strong>required</strong> in majority of
@@ -656,7 +656,7 @@ Transport.send(message);</code></pre></div>
     </p>
 
     <p>If the resource is configured with a <code>password</code> attribute and
-    either a <code>mail.smtp.client</code> or <code>mail.client</code> attribute
+    either a <code>mail.smtp.user</code> or <code>mail.user</code> attribute
     then Tomcat's resource factory will configure and add a
     <code>javax.mail.Authenticator</code> to the mail session.</p>
 

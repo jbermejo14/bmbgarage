@@ -17,7 +17,7 @@ rem limitations under the License.
 rem ---------------------------------------------------------------------------
 rem NT Service Install/Uninstall script
 rem
-rem Usage: service.bat install/remove [service_name [--rename]] [--client username]
+rem Usage: service.bat install/remove [service_name [--rename]] [--user username]
 rem
 rem Options
 rem install                 Install the service using default settings.
@@ -29,10 +29,10 @@ rem
 rem --rename     (optional) Rename tomcat9.exe and tomcat9w.exe to match
 rem                         the non-default service name.
 rem
-rem username     (optional) The name of the OS client to use to install/remove
-rem                         the service (not the name of the OS client the
+rem username     (optional) The name of the OS user to use to install/remove
+rem                         the service (not the name of the OS user the
 rem                         service will run as). If not specified, the current
-rem                         client is used.
+rem                         user is used.
 rem ---------------------------------------------------------------------------
 
 setlocal
@@ -66,7 +66,7 @@ shift
 if "x%1x" == "xx" goto displayUsage
 set SERVICE_USER=%1
 shift
-runas /env /savecred /client:%SERVICE_USER% "%COMSPEC% /K \"%SELF%\" %SERVICE_CMD% %SERVICE_NAME%"
+runas /env /savecred /user:%SERVICE_USER% "%COMSPEC% /K \"%SELF%\" %SERVICE_CMD% %SERVICE_NAME%"
 exit /b 0
 
 rem Check the environment
@@ -166,7 +166,7 @@ if /i %SERVICE_CMD% == uninstall goto doRemove
 echo Unknown parameter "%SERVICE_CMD%"
 :displayUsage
 echo.
-echo Usage: service.bat install/remove [service_name [--rename]] [--client username]
+echo Usage: service.bat install/remove [service_name [--rename]] [--user username]
 exit /b 1
 
 :doRemove

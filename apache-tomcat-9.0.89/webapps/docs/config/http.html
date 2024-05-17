@@ -110,11 +110,11 @@
       <p>The maximum size in bytes of the request body which will be
       saved/buffered by the container during FORM or CLIENT-CERT authentication
       or during HTTP/1.1 upgrade. For both types of authentication, the request
-      body will be saved/buffered before the client is authenticated. For
+      body will be saved/buffered before the user is authenticated. For
       CLIENT-CERT authentication, the request body is buffered for the duration
       of the SSL handshake and the buffer emptied when the request is processed.
-      For FORM authentication the POST is saved whilst the client is re-directed
-      to the login form and is retained until the client successfully
+      For FORM authentication the POST is saved whilst the user is re-directed
+      to the login form and is retained until the user successfully
       authenticates or the session associated with the authentication request
       expires. For HTTP/1.1 upgrade, the request body is buffered for the
       duration of the upgrade process. The limit can be disabled by setting this
@@ -353,7 +353,7 @@
       <li><code>onRead</code> - an intermediate 100 status
       response will be returned only when the Servlet reads the request body,
       allowing the servlet to inspect the headers and possibly respond
-      before the client agent sends a possibly large request body.</li>
+      before the user agent sends a possibly large request body.</li>
       </ul>
       </p>
     </td></tr><tr><td><code class="attributeName">defaultSSLHostConfigName</code></td><td>
@@ -479,7 +479,7 @@
       where it will be hard-coded to <code>true</code>.</p>
     </td></tr><tr><td><code class="attributeName">noCompressionUserAgents</code></td><td>
       <p>The value is a regular expression (using <code>java.util.regex</code>)
-      matching the <code>client-agent</code> header of HTTP clients for which
+      matching the <code>user-agent</code> header of HTTP clients for which
       compression should not be used,
       because these clients, although they do advertise support for the
       feature, have a broken implementation.
@@ -507,7 +507,7 @@
     </td></tr><tr><td><code class="attributeName">relaxedPathChars</code></td><td>
       <p>The <a href="https://tools.ietf.org/rfc/rfc7230.txt">HTTP/1.1
       specification</a> requires that certain characters are %nn encoded when
-      used in URI paths. Unfortunately, many client agents including all the major
+      used in URI paths. Unfortunately, many user agents including all the major
       browsers are not compliant with this specification and use these
       characters in unencoded form. To prevent Tomcat rejecting such requests,
       this attribute may be used to specify the additional characters to allow.
@@ -518,7 +518,7 @@
     </td></tr><tr><td><code class="attributeName">relaxedQueryChars</code></td><td>
       <p>The <a href="https://tools.ietf.org/rfc/rfc7230.txt">HTTP/1.1
       specification</a> requires that certain characters are %nn encoded when
-      used in URI query strings. Unfortunately, many client agents including all
+      used in URI query strings. Unfortunately, many user agents including all
       the major browsers are not compliant with this specification and use these
       characters in unencoded form. To prevent Tomcat rejecting such requests,
       this attribute may be used to specify the additional characters to allow.
@@ -528,7 +528,7 @@
       present in the value will be ignored.</p>
     </td></tr><tr><td><code class="attributeName">restrictedUserAgents</code></td><td>
       <p>The value is a regular expression (using <code>java.util.regex</code>)
-      matching the <code>client-agent</code> header of HTTP clients for which
+      matching the <code>user-agent</code> header of HTTP clients for which
       HTTP/1.1 or HTTP/1.0 keep alive should not be used, even if the clients
       advertise support for these features.
       The default value is an empty String (regexp matching disabled).</p>
@@ -1352,7 +1352,7 @@
       <p>JSSE only.</p>
       <p>The pathname of the keystore file where you have stored the server
       certificate and key to be loaded. By default, the pathname is the file
-      <code>.keystore</code> in the operating system home directory of the client
+      <code>.keystore</code> in the operating system home directory of the user
       that is running Tomcat. If your <code>keystoreType</code> doesn't need a
       file use <code>""</code> (empty string) or <code>NONE</code> for this
       parameter.  Relative paths will be resolved against

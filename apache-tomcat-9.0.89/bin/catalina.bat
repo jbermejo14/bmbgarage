@@ -168,7 +168,7 @@ echo Unable to start as CATALINA_BASE contains a semicolon (;) character
 goto end
 :baseNoSemicolon
 
-rem Ensure that any client defined CLASSPATH variables are not used on startup,
+rem Ensure that any user defined CLASSPATH variables are not used on startup,
 rem but allow them to be specified in setenv.bat, in rare case when it is needed.
 set CLASSPATH=
 

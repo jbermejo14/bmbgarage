@@ -6,14 +6,14 @@
 </div><h3 id="Introduction">Introduction</h3><div class="text">
 
 <p>JNDI Datasource configuration is covered extensively in the
-JNDI-Resources-HOWTO.  However, feedback from <code>tomcat-client</code> has
+JNDI-Resources-HOWTO.  However, feedback from <code>tomcat-user</code> has
 shown that specifics for individual configurations can be rather tricky.</p>
 
 <p>Here then are some example configurations that have been posted to
-tomcat-client for popular databases and some general tips for db usage.</p>
+tomcat-user for popular databases and some general tips for db usage.</p>
 
 <p>You should be aware that since these notes are derived from configuration
-and/or feedback posted to <code>tomcat-client</code> YMMV :-). Please let us
+and/or feedback posted to <code>tomcat-user</code> YMMV :-). Please let us
 know if you have any other tested configurations that you feel may be of use
 to the wider audience, or if you feel we can improve this section in anyway.</p>
 
@@ -184,8 +184,8 @@ drivers that have been reported to work:
 Ensure that you follow these instructions as variations can cause problems.
 </p>
 
-<p>Create a new test client, a new database and a single test table.
-Your MySQL client <strong>must</strong> have a password assigned. The driver
+<p>Create a new test user, a new database and a single test table.
+Your MySQL user <strong>must</strong> have a password assigned. The driver
 will fail if you try to connect with an empty password.
 </p>
 <div class="codeBox"><pre><code>mysql&gt; GRANT ALL PRIVILEGES ON *.* TO javauser@localhost
@@ -197,7 +197,7 @@ mysql&gt; create table testdata (
     -&gt;   foo varchar(25),
     -&gt;   bar int);</code></pre></div>
 <blockquote>
-<strong>Note:</strong> the above client should be removed once testing is
+<strong>Note:</strong> the above user should be removed once testing is
 complete!
 </blockquote>
 
@@ -336,10 +336,10 @@ for this driver class will be discontinued in the next major release.
 <h5>1. Context configuration</h5>
 <p>In a similar manner to the mysql config above, you will need to define your
 Datasource in your <a href="config/context.html">Context</a>. Here we define a
-Datasource called myoracle using the thin driver to connect as client scott,
+Datasource called myoracle using the thin driver to connect as user scott,
 password tiger to the sid called mysid. (Note: with the thin driver this sid is
 not the same as the tnsname). The schema used will be the default schema for the
-client scott.</p>
+user scott.</p>
 
 <p>Use of the OCI driver should simply involve a changing thin to oci in the URL string.
 </p>

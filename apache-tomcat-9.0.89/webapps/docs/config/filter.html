@@ -29,7 +29,7 @@
     enable this behavior.</p>
 
     <p>This filter prevents the attack by explicitly setting a character set.
-    Unless the provided character set is explicitly overridden by the client the
+    Unless the provided character set is explicitly overridden by the user the
     browser will adhere to the explicitly set character set, thus preventing the
     XSS attack.</p>
 
@@ -139,7 +139,7 @@
         header to pre-flight response. <strong>Defaults:</strong>
         <code>1800</code></p>
       </td></tr><tr><td><code class="attributeName">cors.support.credentials</code></td><td>
-        <p>A flag that indicates whether the resource supports client credentials.
+        <p>A flag that indicates whether the resource supports user credentials.
         This flag is exposed as part of
         <code>Access-Control-Allow-Credentials</code> header in a pre-flight
         response. It helps browser determine whether or not an actual request
@@ -327,10 +327,10 @@
       <ul>
         <li>Client asks for a valid nonce. This is performed with a
             non-modifying "Fetch" request to protected resource.</li>
-        <li>Server responds with a valid nonce mapped to the current client
+        <li>Server responds with a valid nonce mapped to the current user
             session.</li>
         <li>Client provides this nonce in the subsequent modifying requests in
-            the frame of the same client session.</li>
+            the frame of the same user session.</li>
         <li>Server rejects all modifying requests to protected resources that
             do not contain a valid nonce.</li>
       </ul>
@@ -939,7 +939,7 @@ FINE: Request "/docs/config/manager.html" with response status "200"
     some configured values to more efficient values. For example, a configuration
     of a 60 seconds time bucket is converted to 65.536 seconds. That allows
     for very fast bucket calculation using bit shift arithmetic. In order to remain
-    true to the client intent, the configured number of requests is then multiplied
+    true to the user intent, the configured number of requests is then multiplied
     by the same ratio, so a configuration of 100 Requests per 60 seconds, has the
     real values of 109 Requests per 65 seconds.</p>
 
@@ -1831,10 +1831,10 @@ org.apache.catalina.filters.RequestDumperFilter.handlers = \
         </th></tr><tr><td><strong><code class="attributeName">encoding</code></strong></td><td>
         <p>Name of the character encoding which should be set.</p>
       </td></tr><tr><td><code class="attributeName">ignore</code></td><td>
-        <p>Determines if any character encoding specified by the client agent is
+        <p>Determines if any character encoding specified by the user agent is
         ignored. If this attribute is <code>true</code>, any value provided by
-        the client agent is ignored. If <code>false</code>, the encoding is only
-        set if the client agent did not specify an encoding. The default value
+        the user agent is ignored. If <code>false</code>, the encoding is only
+        set if the user agent did not specify an encoding. The default value
         is <code>false</code>.</p>
       </td></tr></table>
 

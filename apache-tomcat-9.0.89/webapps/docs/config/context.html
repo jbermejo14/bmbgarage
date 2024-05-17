@@ -389,10 +389,10 @@
         <code>false</code>. If this rule is not followed, double deployment is
         likely to result.</p>
       </td></tr><tr><td><code class="attributeName">preemptiveAuthentication</code></td><td>
-        <p>When set to <code>true</code> and the client presents credentials for a
+        <p>When set to <code>true</code> and the user presents credentials for a
         resource that is not protected by a security constraint, if the
         authenticator supports preemptive authentication (the standard
-        authenticators provided with Tomcat do) then the client' credentials
+        authenticators provided with Tomcat do) then the user' credentials
         will be processed. If not specified, the default of <code>false</code> is
         used.
         </p>
@@ -868,7 +868,7 @@
         <code>/WEB-INF/web.xml</code> resource for this web application
         will be processed (if this resource exists).</li>
     <li>If your web application has specified security constraints that might
-        require client authentication, an appropriate Authenticator that
+        require user authentication, an appropriate Authenticator that
         implements the login method you have selected will be configured.</li>
     </ul>
 

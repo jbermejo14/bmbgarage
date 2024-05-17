@@ -20,10 +20,10 @@
     <p>Tomcat configuration should not be the only line of defense. The other
     components in the system (operating system, network, database, etc.) should
     also be secured.</p>
-    <p>Tomcat should not be run under the root client. Create a dedicated client for
-    the Tomcat process and provide that client with the minimum necessary
+    <p>Tomcat should not be run under the root user. Create a dedicated user for
+    the Tomcat process and provide that user with the minimum necessary
     permissions for the operating system. For example, it should not be possible
-    to log on remotely using the Tomcat client.</p>
+    to log on remotely using the Tomcat user.</p>
     <p>File permissions should also be suitably restricted. In the
     <code>.tar.gz</code> distribution, files and directories are not world
     readable and the group does not have write access. On Unix like operating
@@ -35,7 +35,7 @@
     directories), the standard configuration is to have all Tomcat files owned
     by root with group Tomcat and whilst owner has read/write privileges, group
     only has read and world has no permissions. The exceptions are the logs,
-    temp and work directory that are owned by the Tomcat client rather than root.
+    temp and work directory that are owned by the Tomcat user rather than root.
     This means that even if an attacker compromises the Tomcat process, they
     can't change the Tomcat configuration, deploy new web applications or
     modify existing web applications. The Tomcat process runs with a umask of
@@ -134,7 +134,7 @@
        <li>Ensure that any users permitted to access the management application
            have strong passwords.</li>
        <li>Do not remove the use of the <a href="config/realm.html#LockOut_Realm_-_org.apache.catalina.realm.LockOutRealm">LockOutRealm</a>
-           which prevents brute force attacks against client passwords.</li>
+           which prevents brute force attacks against user passwords.</li>
        <li>Configure the <a href="config/valve.html#Remote_Address_Valve">RemoteAddrValve</a>
            in the <a href="config/context.html">context.xml</a> file for the
            management application which limits access to localhost by default.
@@ -164,7 +164,7 @@
 
     <p>Tomcat is tested with the security manager enabled; but the majority of
     Tomcat users do not run with a security manager, so Tomcat is not as well
-    client-tested in this configuration. There have been, and continue to be,
+    user-tested in this configuration. There have been, and continue to be,
     bugs reported that are triggered by running under a security manager.</p>
 
     <p>The restrictions imposed by a security manager are likely to break most
@@ -295,7 +295,7 @@
       <strong>tomcatAuthorization</strong> attributes are used with the
       AJP connectors to determine if Tomcat should handle all authentication and
       authorisation or if authentication should be delegated to the reverse
-      proxy (the authenticated client name is passed to Tomcat as part of the AJP
+      proxy (the authenticated user name is passed to Tomcat as part of the AJP
       protocol) with the option for Tomcat to still perform authorization.</p>
 
       <p>The <strong>requiredSecret</strong> attribute in AJP connectors
@@ -362,7 +362,7 @@
       <code>java.io.tmpdir</code> system property
       (<code>$CATALINA_BASE/temp</code> by default). This location should be
       secured with appropriate file permissions - typically read/write for the
-      Tomcat client and no access for other users.</p>
+      Tomcat user and no access for other users.</p>
     </div></div>
 
     <div class="subsection"><h4 id="Valves">Valves</h4><div class="text">
@@ -463,7 +463,7 @@
 
     <p>The <strong>
     org.apache.catalina.connector.Response.ENFORCE_ENCODING_IN_GET_WRITER
-    </strong> system property has security implications if disabled. Many client
+    </strong> system property has security implications if disabled. Many user
     agents, in breach of RFC2616, try to guess the character encoding of text
     media types when the specification-mandated default of ISO-8859-1 should be
     used. Some browsers will interpret as UTF-7 a response containing characters
@@ -541,12 +541,12 @@
       appropriately secured directory.</li>
     </ul>
   </div><h3 id="General">General</h3><div class="text">
-    <p>BASIC and FORM authentication pass client names and passwords in clear
+    <p>BASIC and FORM authentication pass user names and passwords in clear
     text. Web applications using these authentication mechanisms with clients
     connecting over untrusted networks should use SSL.</p>
 
-    <p>The session cookie for a session with an authenticated client is nearly as
-    useful as the client's password to an attacker and should be afforded the same
+    <p>The session cookie for a session with an authenticated user is nearly as
+    useful as the user's password to an attacker and should be afforded the same
     level of protection as the password itself. This usually means
     authenticating over SSL and continuing to use SSL until the session
     ends.</p>
@@ -555,7 +555,7 @@
     the directory defined by the <code>java.io.tmpdir</code> system property
     (<code>$CATALINA_BASE/temp</code> by default) to store temporary files. This
     location should be secured with appropriate file permissions - typically
-    read/write for the Tomcat client and no access for other users.</p>
+    read/write for the Tomcat user and no access for other users.</p>
   </div></div></div></div></div><footer><div id="footer">
     Copyright &copy; 1999-2024, The Apache Software Foundation
     <br>

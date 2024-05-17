@@ -13,7 +13,7 @@
 
     <p><strong>Note:</strong> This configuration is needed only if you are
     going to monitor Tomcat remotely. It is not needed if you are going
-    to monitor it locally, using the same client that Tomcat runs with.</p>
+    to monitor it locally, using the same user that Tomcat runs with.</p>
 
     <p>The Oracle website includes the list of options and how to configure
     JMX Remote on Java 8:
@@ -67,7 +67,7 @@ controlRole readwrite</code></pre></div>
 <div class="codeBox"><pre><code>monitorRole tomcat
 controlRole tomcat</code></pre></div>
     <b>Tip</b>: The password file should be read-only and only accessible by the
-    operating system client Tomcat is running as.
+    operating system user Tomcat is running as.
     </li>
     <li>Alternatively, you can configure a JAAS login module with:
 <div class="codeBox"><pre><code>  -Dcom.sun.management.jmxremote.login.config=%login.module.name%</code></pre></div></li>
@@ -226,7 +226,7 @@ List of Attributes
 
   <tr>
     <td>username</td>
-    <td>remote JMX connection client name.
+    <td>remote JMX connection user name.
     </td>
     <td></td>
   </tr>
@@ -875,7 +875,7 @@ List of Attributes
 
   <tr>
     <td>username</td>
-    <td>remote JMX connection client name.
+    <td>remote JMX connection user name.
     </td>
     <td></td>
   </tr>
@@ -1014,7 +1014,7 @@ List of Attributes
 
   <tr>
     <td>username</td>
-    <td>remote JMX connection client name.
+    <td>remote JMX connection user name.
     </td>
     <td></td>
   </tr>

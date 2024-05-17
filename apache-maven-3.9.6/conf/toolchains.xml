@@ -22,12 +22,12 @@ under the License.
 <!--
  | This is the toolchains file for Maven. It can be specified at two levels:
  |
- |  1. User Level. This toolchains.xml file provides configuration for a single client,
- |                 and is normally provided in ${client.home}/.m2/toolchains.xml.
+ |  1. User Level. This toolchains.xml file provides configuration for a single user,
+ |                 and is normally provided in ${user.home}/.m2/toolchains.xml.
  |
  |                 NOTE: This location can be overridden with the CLI option:
  |
- |                 -t /path/to/client/toolchains.xml
+ |                 -t /path/to/user/toolchains.xml
  |
  |  2. Global Level. This toolchains.xml file provides configuration for all Maven
  |                 users on a machine (assuming they're all using the same Maven

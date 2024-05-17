@@ -172,7 +172,7 @@ Returns the list of all the defined variables.
 </li>
 <li>
 <strong>set</strong> - <code>&lt;!--#set var="foo" value="Bar" --&gt;</code>
-is used to assign a value to a client-defined variable.
+is used to assign a value to a user-defined variable.
 </li>
 <li>
 <strong>if elif endif else</strong> - Used to create conditional sections. For example:
@@ -208,7 +208,7 @@ and cannot be used.
 <tr>
 <td>AUTH_TYPE</td>
 <td>
-  The type of authentication used for this client: BASIC, FORM, etc.</td>
+  The type of authentication used for this user: BASIC, FORM, etc.</td>
 </tr>
 
 <tr>
@@ -322,22 +322,22 @@ with "\"</td>
 <tr>
 <td>REMOTE_ADDR</td>
 <td>
-  The remote IP address of the client making the request.</td>
+  The remote IP address of the user making the request.</td>
 </tr>
 <tr>
 <td>REMOTE_HOST</td>
 <td>
-  The remote hostname of the client making the request.</td>
+  The remote hostname of the user making the request.</td>
 </tr>
 <tr>
 <td>REMOTE_PORT</td>
 <td>
-  The port number at remote IP address of the client making the request.</td>
+  The port number at remote IP address of the user making the request.</td>
 </tr>
 <tr>
 <td>REMOTE_USER</td>
 <td>
-  The authenticated name of the client.</td>
+  The authenticated name of the user.</td>
 </tr>
 <tr>
 <td>REQUEST_METHOD</td>

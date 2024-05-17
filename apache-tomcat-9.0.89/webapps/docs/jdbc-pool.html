@@ -299,7 +299,7 @@
     </td></tr><tr><td><code class="attributeName">connectionProperties</code></td><td>
       <p>(String) The connection properties that will be sent to our JDBC driver when establishing new connections.
          Format of the string must be [propertyName=property;]*
-         NOTE - The "client" and "password" properties will be passed explicitly, so they do not need to be included here.
+         NOTE - The "user" and "password" properties will be passed explicitly, so they do not need to be included here.
          The default value is <code>null</code>.</p>
     </td></tr><tr><td><code class="attributeName">poolPreparedStatements</code></td><td>
       <p>(boolean) Property not used.</p>
@@ -702,7 +702,7 @@
           try {
             con = datasource.getConnection();
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select * from client");
+            ResultSet rs = st.executeQuery("select * from user");
             int cnt = 1;
             while (rs.next()) {
                 System.out.println((cnt++)+". Host:" +rs.getString("Host")+
@@ -769,7 +769,7 @@
     }
     con = future.get(); //should return instantly
     Statement st = con.createStatement();
-    ResultSet rs = st.executeQuery("select * from client");</code></pre></div>
+    ResultSet rs = st.executeQuery("select * from user");</code></pre></div>
 
   </div></div>
   <div class="subsection"><h4 id="Interceptors">Interceptors</h4><div class="text">
