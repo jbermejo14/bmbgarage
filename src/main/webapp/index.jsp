@@ -1,14 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="com.bermecar.domain.Car" %>
-<%@ page import="com.bermecar.dao.CarDao" %>
+<%@ page import="org.bmbgarage.domain.Car" %>
+<%@ page import="org.bmbgarage.dao.CarDao" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.bermecar.dao.Database" %>
+<%@ page import="org.bmbgarage.dao.Database" %>
 <%@ page import="java.util.ArrayList" %>
 <%@include file="includes/header.jsp"%>
 
 <% if (role.equals("anonymous")) { %>
     <script type="text/javascript">
-       window.location.href = "/bermecars/login.jsp";
+       window.location.href = "/org.bmbgarage/login.jsp";
     </script>
 <%} else { %>
 <!doctype html>
@@ -61,7 +61,6 @@
         %>
         <div class="col">
           <div class="card shadow-sm h-max w-100">
-              <img src="../bermecar-pictures/<%= car.getPhoto() %>"/>
             <div class="card-body">
               <p class="card-text"><strong><%= car.getBrand() %></strong></p>
               <p class="card-text"><%= car.getModel() %></p>
