@@ -54,7 +54,7 @@ example:</p>
 
 <p>There are three ways to use the <strong>Manager</strong> web application.</p>
 <ul>
-<li>As an application with a user interface you use in your browser.
+<li>As an application with a client interface you use in your browser.
 Here is an example URL where you can replace <code>localhost</code> with
 your website host name:  <code>http://localhost:8080/manager/html</code> .</li>
 <li>A minimal version using HTTP requests only which is suitable for use
@@ -111,7 +111,7 @@ To maintain the CSRF protection:</p>
 
 <ul>
   <li>If you use web browser to access the Manager application using
-      a user that has either <strong>manager-script</strong> or
+      a client that has either <strong>manager-script</strong> or
       <strong>manager-jmx</strong> roles (for example for testing
       the plain text or JMX interfaces), you MUST close all windows
       of the browser afterwards to terminate the session.
@@ -144,21 +144,21 @@ Exactly how the usernames/passwords are configured depends on which
     XML-format file by default stored at
     <code>$CATALINA_BASE/conf/tomcat-users.xml</code>, which can be
     edited with any text editor.  This file contains an XML
-    <code>&lt;user&gt;</code> for each individual user, which might
+    <code>&lt;client&gt;</code> for each individual client, which might
     look something like this:
-<div class="codeBox"><pre><code>&lt;user username="craigmcc" password="secret" roles="standard,manager-script" /&gt;</code></pre></div>
+<div class="codeBox"><pre><code>&lt;client username="craigmcc" password="secret" roles="standard,manager-script" /&gt;</code></pre></div>
     which defines the username and password used by this individual to
     log on, and the role names they are associated with.  You can
     add the <strong>manager-script</strong> role to the comma-delimited
     <code>roles</code> attribute for one or more existing users, and/or
     create new users with that assigned role.</li>
 <li><em>DataSourceRealm</em> or <em>JDBCRealm</em>
-    &mdash; Your user and role information is stored in
+    &mdash; Your client and role information is stored in
     a database accessed via JDBC.  Add the <strong>manager-script</strong> role
     to one or more existing users, and/or create one or more new users
     with this role assigned, following the standard procedures for your
     environment.</li>
-<li><em>JNDIRealm</em> &mdash; Your user and role information is stored in
+<li><em>JNDIRealm</em> &mdash; Your client and role information is stored in
     a directory server accessed via LDAP.  Add the
     <strong>manager-script</strong> role to one or more existing users,
     and/or create one or more new users with this role assigned, following
@@ -168,7 +168,7 @@ Exactly how the usernames/passwords are configured depends on which
 <p>The first time you attempt to issue one of the Manager commands
 described in the next section, you will be challenged to log on using
 BASIC authentication.  The username and password you enter do not matter,
-as long as they identify a valid user in the users database who possesses
+as long as they identify a valid client in the users database who possesses
 the role <strong>manager-script</strong>.</p>
 
 <p>In addition to the password restrictions, access to the Manager web
@@ -184,7 +184,7 @@ an example of restricting access to the localhost by IP address:</p>
 
 </div><h3 id="HTML_User-friendly_Interface">HTML User-friendly Interface</h3><div class="text">
 
-<p>The user-friendly HTML interface of Manager web application is located at</p>
+<p>The client-friendly HTML interface of Manager web application is located at</p>
 
 <div class="codeBox"><pre><code>http://{host}:{port}/manager/html</code></pre></div>
 
@@ -1051,7 +1051,7 @@ on each of deployed web applications will be available.</p>
   <div class="subsection"><h4 id="What_is_JMX_Proxy_Servlet">What is JMX Proxy Servlet</h4><div class="text">
     The JMX Proxy Servlet is a lightweight proxy to get and set the
     tomcat internals. (Or any class that has been exposed via an MBean)
-    Its usage is not very user friendly but the UI is
+    Its usage is not very client friendly but the UI is
     extremely helpful for integrating command line scripts for monitoring
     and changing the internals of tomcat. You can do two things with the proxy:
     get information and set information. For you to really understand the
@@ -1176,7 +1176,7 @@ commands, you must perform the following setup operations:</p>
 <li>Add the <code>$ANT_HOME/bin</code> directory to your <code>PATH</code>
     environment variable.</li>
 <li>Configure at least one username/password combination in your Tomcat
-    user database that includes the <code>manager-script</code> role.</li>
+    client database that includes the <code>manager-script</code> role.</li>
 </ul>
 
 <p>To use custom tasks within Ant, you must declare them first with an

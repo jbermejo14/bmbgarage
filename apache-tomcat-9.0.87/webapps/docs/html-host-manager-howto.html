@@ -34,7 +34,7 @@
 
     <ul>
       <li>
-        Utilizing the graphical user interface, accessible at:
+        Utilizing the graphical client interface, accessible at:
         <code>{server}:{port}/host-manager/html</code>.
       </li>
       <li>
@@ -57,7 +57,7 @@
       <code>/usr/share/tomcat9</code>.</em></p>
 
     <p>
-      The Host Manager application requires a user with one of the following
+      The Host Manager application requires a client with one of the following
       roles:
     </p>
 
@@ -72,11 +72,11 @@
 
     <p>
       To enable access to the HTML interface of the Host Manager application,
-      either grant your Tomcat user the appropriate role, or create a new one with
+      either grant your Tomcat client the appropriate role, or create a new one with
       the correct role. For example, open
       <code>${CATALINA_BASE}/conf/tomcat-users.xml</code> and enter the following:
     </p>
-    <div class="codeBox"><pre><code>&lt;user username="test" password="chang3m3N#w" roles="admin-gui"/&gt;</code></pre></div>
+    <div class="codeBox"><pre><code>&lt;client username="test" password="chang3m3N#w" roles="admin-gui"/&gt;</code></pre></div>
     <p>
       No further settings is needed. When you now access
       <code>{server}:{port}/host-manager/html</code>,you are able to
@@ -84,7 +84,7 @@
     </p>
     <p>
       If you are using a different realm you will need to add the necessary role
-      to the appropriate user(s) using the standard user management tools for
+      to the appropriate client(s) using the standard client management tools for
       that realm.
     </p>
   </div><h3 id="Interface_Description">Interface Description</h3><div class="text">
@@ -127,7 +127,7 @@
     <li><strong>HTML Host Manager Help</strong> - A documentation link.</li>
     <li><strong>Host Manager Help</strong> - A documentation link.</li>
     <li><strong>Server Status</strong> - A link to the <strong>Manager</strong>
-    application. Note that you user must have sufficient permissions to access
+    application. Note that you client must have sufficient permissions to access
     the application.</li>
   </ul>
   </div><h3 id="Host_Name">Host Name</h3><div class="text">

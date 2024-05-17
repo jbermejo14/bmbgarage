@@ -389,34 +389,34 @@ https://docs.oracle.com/error-help/db/ora-00942/
 		... 54 more
 06-May-2024 10:33:33.657 SEVERE [http-nio-8082-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
 17: </head>
 18: <%
 19:     int id = 0;
 20:     id = Integer.parseInt(currentSession.getAttribute("id");
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ")" to complete Expression
 17: </head>
 18: <%
 19:     int id = 0;
 20:     id = Integer.parseInt(currentSession.getAttribute("id");
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     int id = 0;
 20:     id = Integer.parseInt(currentSession.getAttribute("id");
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -425,34 +425,34 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
 17: </head>
 18: <%
 19:     int id = 0;
 20:     id = Integer.parseInt(currentSession.getAttribute("id");
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ")" to complete Expression
 17: </head>
 18: <%
 19:     int id = 0;
 20:     id = Integer.parseInt(currentSession.getAttribute("id");
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     int id = 0;
 20:     id = Integer.parseInt(currentSession.getAttribute("id");
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -1686,7 +1686,7 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:16:55.980 SEVERE [http-nio-8082-exec-52] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 16: 
 17: </head>
@@ -1694,47 +1694,47 @@ Duplicate local variable session
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -1744,7 +1744,7 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 16: 
 17: </head>
@@ -1752,47 +1752,47 @@ Duplicate local variable session
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -1835,44 +1835,44 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:17:22.834 SEVERE [http-nio-8082-exec-62] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 16: 
 17: </head>
 18: <%
 19:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 22: %>
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 18: <%
 19:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 18: <%
 19:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [34] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [34] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 31:             </div>
 32:             <div class="card-body">
-33:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+33:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 34:                 <p class="card-text"><%= car.getTelephone() %></p>
 35:             </div>
 36: 
@@ -1882,44 +1882,44 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 16: 
 17: </head>
 18: <%
 19:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 22: %>
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 18: <%
 19:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 18: <%
 19:     int userId = Integer.parseInt(session.getAttribute("id").toString());
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [34] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [34] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 31:             </div>
 32:             <div class="card-body">
-33:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+33:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 34:                 <p class="card-text"><%= car.getTelephone() %></p>
 35:             </div>
 36: 
@@ -1962,33 +1962,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:17:43.384 SEVERE [http-nio-8082-exec-63] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [33] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [33] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 30:             </div>
 31:             <div class="card-body">
-32:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+32:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 33:                 <p class="card-text"><%= car.getTelephone() %></p>
 34:             </div>
 35: 
@@ -1998,33 +1998,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [33] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [33] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 30:             </div>
 31:             <div class="card-body">
-32:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+32:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 33:                 <p class="card-text"><%= car.getTelephone() %></p>
 34:             </div>
 35: 
@@ -2133,33 +2133,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:17:55.821 SEVERE [http-nio-8082-exec-66] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [33] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [33] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 30:             </div>
 31:             <div class="card-body">
-32:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+32:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 33:                 <p class="card-text"><%= car.getTelephone() %></p>
 34:             </div>
 35: 
@@ -2169,33 +2169,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 17: </head>
 18: <%
 19:     Database.connect();
-20:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+20:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 21: %>
 22: <main>
 23:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [33] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [33] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 30:             </div>
 31:             <div class="card-body">
-32:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+32:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 33:                 <p class="card-text"><%= car.getTelephone() %></p>
 34:             </div>
 35: 
@@ -2238,7 +2238,7 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:18:58.147 SEVERE [http-nio-8082-exec-70] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 16: 
 17: </head>
@@ -2246,48 +2246,48 @@ Duplicate local variable session
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2296,7 +2296,7 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 16: 
 17: </head>
@@ -2304,48 +2304,48 @@ Duplicate local variable session
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2486,7 +2486,7 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:19:02.188 SEVERE [http-nio-8082-exec-72] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 16: 
 17: </head>
@@ -2494,48 +2494,48 @@ Duplicate local variable session
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2544,7 +2544,7 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [19] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [19] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 16: 
 17: </head>
@@ -2552,48 +2552,48 @@ Duplicate local variable session
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     HttpSession session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2635,45 +2635,45 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:19:22.284 SEVERE [http-nio-8082-exec-77] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2682,45 +2682,45 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Duplicate local variable userId
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2762,34 +2762,34 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:19:41.065 SEVERE [http-nio-8082-exec-69] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2798,34 +2798,34 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2900,34 +2900,34 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:19:51.877 SEVERE [http-nio-8082-exec-83] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -2936,34 +2936,34 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -3005,34 +3005,34 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:21:11.852 SEVERE [http-nio-8082-exec-84] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -3041,34 +3041,34 @@ User cannot be resolved to a type
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from String to int
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
@@ -3110,33 +3110,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:21:15.928 SEVERE [http-nio-8082-exec-82] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3146,33 +3146,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3347,33 +3347,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:21:21.423 SEVERE [http-nio-8082-exec-83] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3383,33 +3383,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3452,23 +3452,23 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:22:18.659 SEVERE [http-nio-8082-exec-92] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 18: <%
 19:     session = request.getSession();
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ")" to complete MethodInvocation
 18: <%
 19:     session = request.getSession();
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
@@ -3477,23 +3477,23 @@ Syntax error, insert ")" to complete MethodInvocation
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 18: <%
 19:     session = request.getSession();
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ")" to complete MethodInvocation
 18: <%
 19:     session = request.getSession();
 20:     Database.connect();
-21:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
+21:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(Integer.parseInt(session.getAttribute("id").toString());));
 22: %>
 23: <main>
 24:     <section class="py-5 text-center container">
@@ -3535,44 +3535,44 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:22:34.909 SEVERE [http-nio-8082-exec-87] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3582,44 +3582,44 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3728,44 +3728,44 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:22:51.967 SEVERE [http-nio-8082-exec-96] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3775,44 +3775,44 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 The method parseInt(String) in the type Integer is not applicable for the arguments (Object)
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id"));
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3855,44 +3855,44 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:23:18.803 SEVERE [http-nio-8082-exec-98] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -3902,44 +3902,44 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4114,44 +4114,44 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:23:24.638 SEVERE [http-nio-8082-exec-103] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4161,44 +4161,44 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [20] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [20] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 17: </head>
 18: <%
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute(id).toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4241,33 +4241,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:25:00.367 SEVERE [http-nio-8082-exec-108] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4277,33 +4277,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4346,33 +4346,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:25:06.307 SEVERE [http-nio-8082-exec-111] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4382,33 +4382,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4550,33 +4550,33 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:25:10.472 SEVERE [http-nio-8082-exec-112] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4586,33 +4586,33 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 19:     session = request.getSession();
 20:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 21:     Database.connect();
-22:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+22:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 23: %>
 24: <main>
 25:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [35] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [35] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 32:             </div>
 33:             <div class="card-body">
-34:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+34:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 35:                 <p class="card-text"><%= car.getTelephone() %></p>
 36:             </div>
 37: 
@@ -4658,22 +4658,22 @@ Stacktrace:
 An error occurred at line: [18] in the generated java file: [C:\Users\jimmy\Desktop\apache-tomcat-9.0.87\work\Catalina\localhost\bermecars\org\apache\jsp\user_002dprofile_jsp.java]
 Only a type can be imported. com.bermecar.domain.UserDao resolves to a package
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4686,22 +4686,22 @@ Stacktrace:] with root cause
 An error occurred at line: [18] in the generated java file: [C:\Users\jimmy\Desktop\apache-tomcat-9.0.87\work\Catalina\localhost\bermecars\org\apache\jsp\user_002dprofile_jsp.java]
 Only a type can be imported. com.bermecar.domain.UserDao resolves to a package
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 UserDao cannot be resolved to a type
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4747,22 +4747,22 @@ Stacktrace:
 An error occurred at line: [17] in the generated java file: [C:\Users\jimmy\Desktop\apache-tomcat-9.0.87\work\Catalina\localhost\bermecars\org\apache\jsp\user_002dprofile_jsp.java]
 Only a type can be imported. com.bermecar.dao.User resolves to a package
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4775,22 +4775,22 @@ Stacktrace:] with root cause
 An error occurred at line: [17] in the generated java file: [C:\Users\jimmy\Desktop\apache-tomcat-9.0.87\work\Catalina\localhost\bermecars\org\apache\jsp\user_002dprofile_jsp.java]
 Only a type can be imported. com.bermecar.dao.User resolves to a package
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4836,22 +4836,22 @@ Stacktrace:
 An error occurred at line: [17] in the generated java file: [C:\Users\jimmy\Desktop\apache-tomcat-9.0.87\work\Catalina\localhost\bermecars\org\apache\jsp\user_002dprofile_jsp.java]
 Only a type can be imported. com.bermecar.dao.User resolves to a package
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4864,22 +4864,22 @@ Stacktrace:] with root cause
 An error occurred at line: [17] in the generated java file: [C:\Users\jimmy\Desktop\apache-tomcat-9.0.87\work\Catalina\localhost\bermecars\org\apache\jsp\user_002dprofile_jsp.java]
 Only a type can be imported. com.bermecar.dao.User resolves to a package
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 User cannot be resolved to a type
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4922,11 +4922,11 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:27:40.938 SEVERE [http-nio-8082-exec-129] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -4936,11 +4936,11 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -5049,11 +5049,11 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:27:51.839 SEVERE [http-nio-8082-exec-132] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -5063,11 +5063,11 @@ car cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
 car cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
 37:                 <p class="card-text"><%= car.getTelephone() %></p>
 38:             </div>
 39: 
@@ -5108,14 +5108,14 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:28:49.366 SEVERE [http-nio-8082-exec-136] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:28:49.366 SEVERE [http-nio-8082-exec-136] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 
 
@@ -5150,14 +5150,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:28:51.148 SEVERE [http-nio-8082-exec-138] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:28:51.148 SEVERE [http-nio-8082-exec-138] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 
 
@@ -5194,7 +5194,7 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:35:52.415 SEVERE [http-nio-8082-exec-141] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 18: 
 19: </head>
@@ -5202,13 +5202,13 @@ Duplicate local variable session
 21:     HttpSession session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 18: 
 19: </head>
@@ -5216,7 +5216,7 @@ Duplicate local variable session
 21:     HttpSession session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 
 
 Stacktrace:
@@ -5255,7 +5255,7 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:36:31.102 SEVERE [http-nio-8082-exec-144] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 18: 
 19: </head>
@@ -5263,13 +5263,13 @@ Duplicate local variable session
 21:     HttpSession session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 18: 
 19: </head>
@@ -5277,7 +5277,7 @@ Duplicate local variable session
 21:     HttpSession session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 
 
 Stacktrace:
@@ -5609,7 +5609,7 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:38:08.568 SEVERE [http-nio-8082-exec-153] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 18: 
 19: </head>
@@ -5617,13 +5617,13 @@ Duplicate local variable session
 21:     HttpSession session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 18: 
 19: </head>
@@ -5631,7 +5631,7 @@ Duplicate local variable session
 21:     HttpSession session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 
 
 Stacktrace:
@@ -5668,14 +5668,14 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:39:49.313 SEVERE [http-nio-8082-exec-159] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:39:49.313 SEVERE [http-nio-8082-exec-159] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 
 
@@ -5710,14 +5710,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:47:08.952 SEVERE [http-nio-8082-exec-160] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:47:08.952 SEVERE [http-nio-8082-exec-160] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 
 
@@ -5752,14 +5752,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:47:11.673 SEVERE [http-nio-8082-exec-164] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:47:11.673 SEVERE [http-nio-8082-exec-164] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int userId2 = Integer.parseInt(session.getAttribute("id").toString());
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 25: %>
 
 
@@ -6183,24 +6183,24 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:51:12.572 SEVERE [http-nio-8082-exec-178] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [29] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [29] in the jsp file: [/client-profile.jsp]
 The method getName() is undefined for the type User
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
-29:     <p>Welcome, <%= user.getName() %></p>
+29:     <p>Welcome, <%= client.getName() %></p>
 30: </body>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [29] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [29] in the jsp file: [/client-profile.jsp]
 The method getName() is undefined for the type User
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
-29:     <p>Welcome, <%= user.getName() %></p>
+29:     <p>Welcome, <%= client.getName() %></p>
 30: </body>
 
 
@@ -6339,24 +6339,24 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:51:21.685 SEVERE [http-nio-8082-exec-179] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [29] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [29] in the jsp file: [/client-profile.jsp]
 The method getName() is undefined for the type User
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
-29:     <p>Welcome, <%= user.getName() %></p>
+29:     <p>Welcome, <%= client.getName() %></p>
 30: </body>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [29] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [29] in the jsp file: [/client-profile.jsp]
 The method getName() is undefined for the type User
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
-29:     <p>Welcome, <%= user.getName() %></p>
+29:     <p>Welcome, <%= client.getName() %></p>
 30: </body>
 
 
@@ -6394,14 +6394,14 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:51:42.818 SEVERE [http-nio-8082-exec-186] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [25]
+06-May-2024 22:51:42.818 SEVERE [http-nio-8082-exec-186] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [25]
 
 22:     <%
 23:         session = request.getSession();
 24:         Object idObj = session.getAttribute("id");
 25:         int userId2 = Integer.parseInt(idObj.toString());
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
 
 
@@ -6436,14 +6436,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:51:43.509 SEVERE [http-nio-8082-exec-184] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [25]
+06-May-2024 22:51:43.509 SEVERE [http-nio-8082-exec-184] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [25]
 
 22:     <%
 23:         session = request.getSession();
 24:         Object idObj = session.getAttribute("id");
 25:         int userId2 = Integer.parseInt(idObj.toString());
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
 
 
@@ -6478,14 +6478,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:51:45.914 SEVERE [http-nio-8082-exec-183] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [25]
+06-May-2024 22:51:45.914 SEVERE [http-nio-8082-exec-183] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [25]
 
 22:     <%
 23:         session = request.getSession();
 24:         Object idObj = session.getAttribute("id");
 25:         int userId2 = Integer.parseInt(idObj.toString());
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
 
 
@@ -6520,14 +6520,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:51:49.976 SEVERE [http-nio-8082-exec-187] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [25]
+06-May-2024 22:51:49.976 SEVERE [http-nio-8082-exec-187] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [25]
 
 22:     <%
 23:         session = request.getSession();
 24:         Object idObj = session.getAttribute("id");
 25:         int userId2 = Integer.parseInt(idObj.toString());
 26:         Database.connect();
-27:         User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
+27:         User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(userId2));
 28:     %>
 
 
@@ -6564,7 +6564,7 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:53:36.976 SEVERE [http-nio-8082-exec-191] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 19: <body>
 20:     <h1>User Profile</h1>
@@ -6578,7 +6578,7 @@ Duplicate local variable session
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 19: <body>
 20:     <h1>User Profile</h1>
@@ -6724,7 +6724,7 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:53:41.569 SEVERE [http-nio-8082-exec-186] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 19: <body>
 20:     <h1>User Profile</h1>
@@ -6738,7 +6738,7 @@ Duplicate local variable session
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Duplicate local variable session
 19: <body>
 20:     <h1>User Profile</h1>
@@ -6785,34 +6785,34 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:55:40.584 SEVERE [http-nio-8082-exec-169] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -6821,34 +6821,34 @@ id cannot be resolved to a variable
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -6956,34 +6956,34 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:55:44.941 SEVERE [http-nio-8082-exec-199] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -6992,34 +6992,34 @@ id cannot be resolved to a variable
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -7059,14 +7059,14 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:16.476 SEVERE [http-nio-8082-exec-200] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:16.476 SEVERE [http-nio-8082-exec-200] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7103,14 +7103,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:17.068 SEVERE [http-nio-8082-exec-202] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:17.068 SEVERE [http-nio-8082-exec-202] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7147,14 +7147,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:17.298 SEVERE [http-nio-8082-exec-203] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:17.298 SEVERE [http-nio-8082-exec-203] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7191,14 +7191,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:17.527 SEVERE [http-nio-8082-exec-204] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:17.527 SEVERE [http-nio-8082-exec-204] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7235,14 +7235,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:17.821 SEVERE [http-nio-8082-exec-197] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:17.821 SEVERE [http-nio-8082-exec-197] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7279,14 +7279,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:18.076 SEVERE [http-nio-8082-exec-208] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:18.076 SEVERE [http-nio-8082-exec-208] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7323,14 +7323,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:18.318 SEVERE [http-nio-8082-exec-207] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:18.318 SEVERE [http-nio-8082-exec-207] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7367,14 +7367,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:56:20.523 SEVERE [http-nio-8082-exec-198] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 22:56:20.523 SEVERE [http-nio-8082-exec-198] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7413,34 +7413,34 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:56:33.904 SEVERE [http-nio-8082-exec-212] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 The method getUser(int) in the type UserDao is not applicable for the arguments (String)
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -7449,34 +7449,34 @@ The method getUser(int) in the type UserDao is not applicable for the arguments 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 The method getUser(int) in the type UserDao is not applicable for the arguments (String)
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -7584,34 +7584,34 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 22:56:38.490 SEVERE [http-nio-8082-exec-197] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 The method getUser(int) in the type UserDao is not applicable for the arguments (String)
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -7620,34 +7620,34 @@ The method getUser(int) in the type UserDao is not applicable for the arguments 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
 The method getUser(int) in the type UserDao is not applicable for the arguments (String)
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser("id"));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
@@ -7687,14 +7687,14 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:57:46.893 SEVERE [http-nio-8082-exec-216] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [25]
+06-May-2024 22:57:46.893 SEVERE [http-nio-8082-exec-216] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [25]
 
 22:     int id;
-23:     User user = null;
+23:     User client = null;
 24:     session = request.getSession();
 25:     id = Integer.parseInt(request.getParameter("id"));
 26:     Database.connect();
-27:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+27:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 28: %>
 
 
@@ -7731,14 +7731,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 22:57:49.010 SEVERE [http-nio-8082-exec-215] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [25]
+06-May-2024 22:57:49.010 SEVERE [http-nio-8082-exec-215] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [25]
 
 22:     int id;
-23:     User user = null;
+23:     User client = null;
 24:     session = request.getSession();
 25:     id = Integer.parseInt(request.getParameter("id"));
 26:     Database.connect();
-27:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+27:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 28: %>
 
 
@@ -7778,14 +7778,14 @@ Stacktrace:] with root cause
 06-May-2024 23:29:57.297 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
 06-May-2024 23:29:57.297 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
 06-May-2024 23:29:57.299 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7807ac2c')
-06-May-2024 23:30:57.486 SEVERE [http-nio-8082-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [24]
+06-May-2024 23:30:57.486 SEVERE [http-nio-8082-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [24]
 
 21:     int id;
-22:     User user = null;
+22:     User client = null;
 23:     session = request.getSession();
 24:     id = Integer.parseInt(request.getParameter("id"));
 25:     Database.connect();
-26:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+26:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 27: %>
 
 
@@ -7824,45 +7824,45 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:32:38.429 SEVERE [http-nio-8082-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
-user cannot be resolved to a variable
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
+client cannot be resolved to a variable
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [36] in the jsp file: [/user-profile.jsp]
-user cannot be resolved
+An error occurred at line: [36] in the jsp file: [/client-profile.jsp]
+client cannot be resolved
 33:                 CAR
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
-37:                 <p class="card-text"><%= user.getTelephone() %></p>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
+37:                 <p class="card-text"><%= client.getTelephone() %></p>
 38:             </div>
 39: 
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
-user cannot be resolved
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
+client cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
-37:                 <p class="card-text"><%= user.getTelephone() %></p>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
+37:                 <p class="card-text"><%= client.getTelephone() %></p>
 38:             </div>
 39: 
 40:         </div>
@@ -7871,45 +7871,45 @@ user cannot be resolved
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [24] in the jsp file: [/user-profile.jsp]
-user cannot be resolved to a variable
+An error occurred at line: [24] in the jsp file: [/client-profile.jsp]
+client cannot be resolved to a variable
 21:     session = request.getSession();
 22:     id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 26: <main>
 27:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [36] in the jsp file: [/user-profile.jsp]
-user cannot be resolved
+An error occurred at line: [36] in the jsp file: [/client-profile.jsp]
+client cannot be resolved
 33:                 CAR
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
-37:                 <p class="card-text"><%= user.getTelephone() %></p>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
+37:                 <p class="card-text"><%= client.getTelephone() %></p>
 38:             </div>
 39: 
 
 
-An error occurred at line: [37] in the jsp file: [/user-profile.jsp]
-user cannot be resolved
+An error occurred at line: [37] in the jsp file: [/client-profile.jsp]
+client cannot be resolved
 34:             </div>
 35:             <div class="card-body">
-36:                 <h5 class="card-title"><%= user.getUsername() %></h5>
-37:                 <p class="card-text"><%= user.getTelephone() %></p>
+36:                 <h5 class="card-title"><%= client.getUsername() %></h5>
+37:                 <p class="card-text"><%= client.getTelephone() %></p>
 38:             </div>
 39: 
 40:         </div>
@@ -7949,14 +7949,14 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 23:33:16.534 SEVERE [http-nio-8082-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 23:33:16.534 SEVERE [http-nio-8082-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -7993,14 +7993,14 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-06-May-2024 23:33:17.275 SEVERE [http-nio-8082-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [22]
+06-May-2024 23:33:17.275 SEVERE [http-nio-8082-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [22]
 
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = Integer.parseInt(request.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -8039,50 +8039,50 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:33:54.707 SEVERE [http-nio-8082-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 The method getParameter(String) is undefined for the type HttpSession
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = session.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = session.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 The method getParameter(String) is undefined for the type HttpSession
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = session.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Syntax error on token ")", delete this token
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = session.getParameter("id"));
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -8122,50 +8122,50 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:35:28.158 SEVERE [http-nio-8082-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete LocalVariableDeclarationStatement
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete LocalVariableDeclarationStatement
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -8271,50 +8271,50 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:35:32.582 SEVERE [http-nio-8082-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete LocalVariableDeclarationStatement
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
-An error occurred at line: [22] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [22] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete LocalVariableDeclarationStatement
 19: </head>
 20: <%
 21:     session = request.getSession();
 22:     int id = request.getSession().getAttribute("id")
 23:     Database.connect();
-24:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+24:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 25: %>
 
 
@@ -8354,50 +8354,50 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:36:00.372 SEVERE [http-nio-8082-exec-26] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 18: 
 19: </head>
 20: <%
 21:     id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete Statement
 18: 
 19: </head>
 20: <%
 21:     id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 18: 
 19: </head>
 20: <%
 21:     id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete Statement
 18: 
 19: </head>
 20: <%
 21:     id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -8437,50 +8437,50 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:36:25.960 SEVERE [http-nio-8082-exec-23] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete LocalVariableDeclarationStatement
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Syntax error, insert ";" to complete LocalVariableDeclarationStatement
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id")
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -8520,28 +8520,28 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:37:03.521 SEVERE [http-nio-8082-exec-25] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -8647,28 +8647,28 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:37:07.708 SEVERE [http-nio-8082-exec-30] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -8708,28 +8708,28 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:37:22.771 SEVERE [http-nio-8082-exec-37] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -8769,28 +8769,28 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:39:16.381 SEVERE [http-nio-8082-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = request.getSession().getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -8890,28 +8890,28 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:41:36.422 SEVERE [http-nio-8082-exec-39] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
@@ -9017,28 +9017,28 @@ Stacktrace:
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 06-May-2024 23:41:48.873 SEVERE [http-nio-8082-exec-53] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     int id = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 

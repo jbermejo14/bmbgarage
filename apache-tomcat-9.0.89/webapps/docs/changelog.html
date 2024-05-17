@@ -106,7 +106,7 @@
         messages for abnormal closes. The timeout defaults to 50 milliseconds
         and may be controlled using the
         <code>org.apache.tomcat.websocket.ABNORMAL_SESSION_CLOSE_SEND_TIMEOUT</code>
-        property in the user properties collection associated with the WebSocket
+        property in the client properties collection associated with the WebSocket
         session. (markt)
       </li>
     </ul>
@@ -305,7 +305,7 @@
         attempt for the remaining content. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Correct a regression in the support for user provided
+        Correct a regression in the support for client provided
         <code>SSLContext</code> instances that broke the
         <code>org.apache.catalina.security.TLSCertificateReloadListener</code>.
         (markt)
@@ -397,7 +397,7 @@
         HTTP/2 debug logging has been changed to trace level. (remm)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Add support for user provided <code>SSLContext</code> instances
+        Add support for client provided <code>SSLContext</code> instances
         configured on <code>SSLHostConfigCertificate</code> instances. Based on
         pull request <a href="https://github.com/apache/tomcat/pull/673">#673</a> provided by Hakan Altındağ. (markt)
       </li>
@@ -584,7 +584,7 @@
   <div class="subsection"><h4 id="Tomcat_9.0.84_(remm)/Web_Applications">Web Applications</h4><div class="text">
     <ul class="changelog">
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Examples. Improve the error handling so snakes associated with a user
+        Examples. Improve the error handling so snakes associated with a client
         that drops from the network are removed from the game. (markt)
       </li>
     </ul>
@@ -637,7 +637,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=67793">67793</a>: Ensure the original session timeout is restored after
-        FORM authentication if the user refreshes a page during the FORM
+        FORM authentication if the client refreshes a page during the FORM
         authentication process. Based on a suggestion by Mircea Butmalai.
         (markt)
       </li>
@@ -1329,7 +1329,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=66575">66575</a>: Avoid unchecked use of the backing array of a
-        buffer provided by the user in the compression transformation. (remm)
+        buffer provided by the client in the compression transformation. (remm)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         Improve exception handling when flushing batched messages during
@@ -1398,7 +1398,7 @@
         <code>SHA-256,MD5</code>. (markt)
       </li>
       <li><img alt="Update: " class="icon" src="./images/update.gif">
-        Add support code for custom user attributes in <code>RealmBase</code>.
+        Add support code for custom client attributes in <code>RealmBase</code>.
         Based on code from <a href="https://github.com/apache/tomcat/pull/473">#473</a> by Carsten Klein. (remm)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -2773,7 +2773,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         Fix regression introduced with <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=65757">65757</a> bugfix which better
         identified non request threads but which introduced a similar problem
-        when user code was doing sequential operations in a single thread.
+        when client code was doing sequential operations in a single thread.
         Test case code submitted by Istvan Szekely. (remm)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -2837,7 +2837,7 @@
         ppkarwasz. (markt)
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
-        <a href="https://github.com/apache/tomcat/pull/472">#472</a>: Add support for additional user attributes to
+        <a href="https://github.com/apache/tomcat/pull/472">#472</a>: Add support for additional client attributes to
         <code>TomcatPrincipal</code> and <code>GenericPrincipal</code>.
         Patch provided by Carsten Klein. (michaelo)
       </li>
@@ -3209,7 +3209,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         Improve robustness of JNDIRealm for exceptions occurring when getting
         the connection. Also add missing close when running into issues
-        getting the passord of a user. (remm)
+        getting the passord of a client. (remm)
       </li>
       <li><img alt="Docs: " class="icon" src="./images/docs.gif">
         Add Javadoc comment which listeners must be nested within
@@ -3288,7 +3288,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://github.com/apache/tomcat/pull/454">#454</a>: Differentiate warning messages in
         <code>KubernetesMembershipProvider</code> so that the missing attribute
-        is clear to the user. PR provided by Hal Deadman. (markt)
+        is clear to the client. PR provided by Hal Deadman. (markt)
       </li>
     </ul>
   </div></div>
@@ -3689,8 +3689,8 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         Modify the HTTP/2 connector not to sent small updates for stream flow
-        control windows to the user agent as, depending on how the user agent is
-        written, this may trigger small writes from the user agent that in turn
+        control windows to the client agent as, depending on how the client agent is
+        written, this may trigger small writes from the client agent that in turn
         trigger the overhead protection. Small updates for stream flow control
         windows are now combined with subsequent flow control window updates for
         that stream to ensure that all stream flow control window updates sent
@@ -4459,7 +4459,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=65047">65047</a>: If the <code>AccessLogValve</code> is unable to open
-        the access log file, include information on the current user in the
+        the access log file, include information on the current client in the
         associated log message  (markt)
       </li>
     </ul>
@@ -4763,7 +4763,7 @@
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
         Add additional debug logging for I/O issues when communicating with the
-        user agent. (markt)
+        client agent. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=64830">64830</a>: Fix concurrency issue in HPACK decoder. (markt)
@@ -4985,7 +4985,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         Update the Manager How-To in the documentation web application to
-        clarify when a user may wish to deploy additional instances of the
+        clarify when a client may wish to deploy additional instances of the
         Manager web application. (markt)
       </li>
     </ul>
@@ -5206,7 +5206,7 @@
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=64644">64644</a>: Add support for a read idle timeout and a write idle
-        timeout to the WebSocket session via custom properties in the user
+        timeout to the WebSocket session via custom properties in the client
         properties instance associated with the session. Based on a pull request
         by sakshamverma. (markt)
       </li>
@@ -5800,7 +5800,7 @@
         Expose the associated <code>HttpServletRequest</code> to the
         <code>CookieProcessor</code> when generating a cookie header so the
         header can be tailored based on the properties of the request, such as
-        the user agent, if required. Based on a patch by Lazar Kirchev. (markt)
+        the client agent, if required. Based on a patch by Lazar Kirchev. (markt)
       </li>
     </ul>
   </div></div>
@@ -6582,7 +6582,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63865">63865</a>: Add <code>Unset</code> option to same-site cookies
-        and pass through <code>None</code> value if set by user. Patch provided
+        and pass through <code>None</code> value if set by client. Patch provided
         by John Kelly. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -6791,7 +6791,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63759">63759</a>: When installing Tomcat with the Windows installer,
         grant sufficient privileges to enable the uninstaller to execute when
-        user account control is active. (markt)
+        client account control is active. (markt)
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
         Use a build property to define the minimum supported Java version and
@@ -6993,7 +6993,7 @@
         (markt)
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
-        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62496">62496</a>: Add option to write auth information (remote user/auth type)
+        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62496">62496</a>: Add option to write auth information (remote client/auth type)
         to response headers. (michaelo)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -7171,7 +7171,7 @@
       </li>
       <li><img alt="Update: " class="icon" src="./images/update.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63310">63310</a>: Update to Commons Daemon 1.2.0. This provides improved
-        support for Java 11. This also changes the user configured by the
+        support for Java 11. This also changes the client configured by the
         Windows installer for the Windows service from <code>Local System</code>
         to the lower privileged <code>Local Service</code>. (markt)
       </li>
@@ -7309,7 +7309,7 @@
         provided by Radosław J&oacute;zwik. (markt)
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
-        Add user buildable optional modules for easier CDI 2 and JAX-RS
+        Add client buildable optional modules for easier CDI 2 and JAX-RS
         support. Also include a new documentation page describing how
         to use it. (remm)
       </li>
@@ -8173,7 +8173,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=63143">63143</a>: Ensure that the Manager web application respects the
-        language preferences of the user as configured in the browser when the
+        language preferences of the client as configured in the browser when the
         language of the default system locale is not English. (markt)
       </li>
     </ul>
@@ -9403,12 +9403,12 @@
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
         Add the <code>AuthenticatedUserRealm</code> for use with CLIENT-CERT and
-        SPNEGO when just the authenticated user name is required. (markt)
+        SPNEGO when just the authenticated client name is required. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=50175">50175</a>: Add a new attribute to the standard context
         implementation, <code>skipMemoryLeakChecksOnJvmShutdown</code>, that
-        allows the user to configure Tomcat to skip the memory leak checks
+        allows the client to configure Tomcat to skip the memory leak checks
         usually performed during web application stop if that stop is triggered
         by a JVM shutdown. (markt)
       </li>
@@ -9508,7 +9508,7 @@
         Add missing handshake timeout for NIO2. (remm)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Correctly handle a digest authorization header when the user name
+        Correctly handle a digest authorization header when the client name
         contains an escaped character. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -9736,7 +9736,7 @@
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62273">62273</a>: Implement configuration options to work-around
-        specification non-compliant user agents (including all the major
+        specification non-compliant client agents (including all the major
         browsers) that do not correctly %nn encode URI paths and query strings
         as required by RFC 7230 and RFC 3986. (markt)
       </li>
@@ -9870,7 +9870,7 @@
         Add document for <code>FragmentationInterceptor</code>. (kfujino)
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
-        Document how the roles for an authenticated user are determined when the
+        Document how the roles for an authenticated client are determined when the
         <code>CombinedRealm</code> is used. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -10068,10 +10068,10 @@
         the root cause exception is reported rather than swallowed. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62036">62036</a>: When caching an authenticated user Principal in the
+        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=62036">62036</a>: When caching an authenticated client Principal in the
         session when the web application is configured with the
         <code>NonLoginAuthenticator</code>, cache the internal Principal object
-        rather than the user facing Principal object as Tomcat requires the
+        rather than the client facing Principal object as Tomcat requires the
         internal object to correctly process later authorization checks. (markt)
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
@@ -10678,7 +10678,7 @@
       </li>
       <li><img alt="Add: " class="icon" src="./images/add.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=51496">51496</a>: When using the Windows installer, check if the
-        requested service name already exists and, if it does, prompt the user
+        requested service name already exists and, if it does, prompt the client
         to select an alternative service name. Patch provided by Ralph
         Plawetzki. (markt)
       </li>
@@ -11188,7 +11188,7 @@
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=61264">61264</a>: Correct a regression in the refactoring to use
         <code>Charset</code> rather than <code>String</code> to store request
         character encoding that prevented <code>getReader()</code> throwing an
-        <code>UnsupportedEncodingException</code> if the user agent specifies
+        <code>UnsupportedEncodingException</code> if the client agent specifies
         an unsupported character encoding. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -12370,7 +12370,7 @@
         HTTP status codes recognised by the ErrorReportValve. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=60446">60446</a>: Handle the case where the stored user credential uses
+        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=60446">60446</a>: Handle the case where the stored client credential uses
         a different key length than the length currently configured for the
         <code>CredentialHandler</code>. Based on a patch by Niklas Holm. (markt)
       </li>
@@ -12600,7 +12600,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=60411">60411</a>: Implement support in the <code>RewriteValve</code> for
         symbolic names to specify the redirect code to use when returning a
-        redirect response to the user agent. Patch provided by Michael Osipov.
+        redirect response to the client agent. Patch provided by Michael Osipov.
         (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -13530,7 +13530,7 @@
         (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Improve error handling around user code prior to calling
+        Improve error handling around client code prior to calling
         <code>InstanceManager.destroy()</code> to ensure that the method is
         executed. (markt)
       </li>
@@ -13561,7 +13561,7 @@
         using the default port. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Improve error handling around user code prior to calling
+        Improve error handling around client code prior to calling
         <code>InstanceManager.destroy()</code> to ensure that the method is
         executed. (markt)
       </li>
@@ -13574,7 +13574,7 @@
   <div class="subsection"><h4 id="Tomcat_9.0.0.M9_(markt)/Jasper">Jasper</h4><div class="text">
     <ul class="changelog">
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Improve error handling around user code prior to calling
+        Improve error handling around client code prior to calling
         <code>InstanceManager.destroy()</code> to ensure that the method is
         executed. (markt)
       </li>
@@ -13589,7 +13589,7 @@
         Connector/Endpoint provided Executor. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        Improve error handling around user code prior to calling
+        Improve error handling around client code prior to calling
         <code>InstanceManager.destroy()</code> to ensure that the method is
         executed. (markt)
       </li>
@@ -14015,7 +14015,7 @@
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         Do not trigger unnecessary session ID changes when using JASPIC and the
-        user is authenticated using cached credentials. (markt)
+        client is authenticated using cached credentials. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59437">59437</a>: Ensure that the JASPIC <code>CallbackHandler</code> is
@@ -14347,7 +14347,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59115">59115</a>: When using the Servlet 3.0 file upload, the submitted
        file name may be provided as a token or a quoted-string. If a
-       quoted-string, unquote the string before returning it to the user.
+       quoted-string, unquote the string before returning it to the client.
        (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -14370,7 +14370,7 @@
         Patch provided by Mikko Tiihonen. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59145">59145</a>: Don't log an invalid warning when a user logs out of
+        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59145">59145</a>: Don't log an invalid warning when a client logs out of
         a session associated with SSO. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -14412,7 +14412,7 @@
         the current OpenSSL implementation. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
-        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59081">59081</a>: Retain the user defined cipher order when defining
+        <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59081">59081</a>: Retain the client defined cipher order when defining
         ciphers. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
@@ -14497,7 +14497,7 @@
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=58283">58283</a>: Change the default download location for libraries
         during the build process from <code>/usr/share/java</code> to
-        <code>${user.home}/temp</code>. Patch provided by Ahmed Hosni. (markt)
+        <code>${client.home}/temp</code>. Patch provided by Ahmed Hosni. (markt)
       </li>
       <li><img alt="Fix: " class="icon" src="./images/fix.gif">
         <a href="https://bz.apache.org/bugzilla/show_bug.cgi?id=59031">59031</a>: When using the Windows uninstaller, do not remove the

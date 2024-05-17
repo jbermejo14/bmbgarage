@@ -1,8 +1,7 @@
 package org.bmbgarage.dao;
 
 import org.bmbgarage.domain.Car;
-import org.bmbgarage.dao.Database;
-import org.bmbgarage.domain.User;
+import org.bmbgarage.domain.Client;
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;
 
@@ -14,10 +13,10 @@ public class CarMapper implements RowMapper<Car> {
     @Override
     public Car map(ResultSet rs, StatementContext ctx) throws SQLException {
 
-        User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(rs.getInt("id")));
+        Client client = Database.jdbi.withExtension(ClientDao.class, dao -> dao.getClient(rs.getInt("id")));
 
         return new Car(rs.getInt("id"),
-                user,
+                client,
                 rs.getString("license_plate"),
                 rs.getString("brand"),
                 rs.getString("car_model"),

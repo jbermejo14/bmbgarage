@@ -314,7 +314,7 @@
   <div class="subsection"><h4 id="Properties_Role_Mapping_Listener_-_org.apache.catalina.core.PropertiesRoleMappingListener">Properties Role Mapping Listener - org.apache.catalina.core.PropertiesRoleMappingListener</h4><div class="text">
 
     <p>The <strong>Properties Role Mapping Listener</strong> populates the context's role mapping
-    from a properties file. The keys represent application roles (e.g., admin, user, uservisor,
+    from a properties file. The keys represent application roles (e.g., admin, client, uservisor,
     etc.) while the values represent technical roles (e.g., DNs, SIDs, UUIDs, etc.). A key can
     also be prefixed if, e.g., the properties file contains generic application configuration
     as well: <code>app-roles.</code>.</p>
@@ -464,7 +464,7 @@
 
     <p>The <strong>UserConfig</strong> provides feature of User Web Applications.
     User Web Applications map a request URI starting with a tilde character ("~")
-    and a username to a directory (commonly named public_html) in that user's
+    and a username to a directory (commonly named public_html) in that client's
     home directory on the server.</p>
 
     <p>See the <a href="host.html#User_Web_Applications">User Web Applications</a>
@@ -478,29 +478,29 @@
         </th><th style="width: 85%;">
           Description
         </th></tr><tr><td><code class="attributeName">directoryName</code></td><td>
-        <p>The directory name to be searched for within each user home directory.
+        <p>The directory name to be searched for within each client home directory.
         The default is <code>public_html</code>.</p>
       </td></tr><tr><td><code class="attributeName">userClass</code></td><td>
-        <p>The class name of the user database class.
-        There are currently two user database, the
+        <p>The class name of the client database class.
+        There are currently two client database, the
         <code>org.apache.catalina.startup.PasswdUserDatabase</code> is used on a
         Unix system that uses the /etc/passwd file to identify valid users.
         The <code>org.apache.catalina.startup.HomesUserDatabase</code> is used on
         a server where /etc/passwd is not in use. HomesUserDatabase deploy all
         directories found in a specified base directory.</p>
       </td></tr><tr><td><code class="attributeName">homeBase</code></td><td>
-        <p>The base directory containing user home directories. This is effective
+        <p>The base directory containing client home directories. This is effective
         only when <code>org.apache.catalina.startup.HomesUserDatabase</code> is
         used.</p>
       </td></tr><tr><td><code class="attributeName">allow</code></td><td>
-        <p>A regular expression defining user who deployment is allowed. If this
-        attribute is specified, the user to deploy must match for this pattern.
+        <p>A regular expression defining client who deployment is allowed. If this
+        attribute is specified, the client to deploy must match for this pattern.
         If this attribute is not specified, all users will be deployed unless the
-        user matches a deny pattern.</p>
+        client matches a deny pattern.</p>
       </td></tr><tr><td><code class="attributeName">deny</code></td><td>
-        <p>A regular expression defining user who deployment is denied. If this
-        attribute is specified, the user to deploy must not match for this
-        pattern. If this attribute is not specified, deployment of user will be
+        <p>A regular expression defining client who deployment is denied. If this
+        attribute is specified, the client to deploy must not match for this
+        pattern. If this attribute is not specified, deployment of client will be
         governed by a allow attribute.</p>
       </td></tr></table>
 

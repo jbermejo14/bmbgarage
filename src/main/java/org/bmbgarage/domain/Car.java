@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 public class Car {
     private int id;
-    private User user;
+    private Client client;
     private String license_plate;
     private String brand;
     private String carmodel;

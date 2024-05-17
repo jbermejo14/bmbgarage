@@ -1,9 +1,8 @@
 package org.bmbgarage.servlet;
 
-import org.bmbgarage.dao.CarDao;
 import org.bmbgarage.dao.Database;
-import org.bmbgarage.dao.UserDao;
-import org.bmbgarage.domain.User;
+import org.bmbgarage.dao.ClientDao;
+import org.bmbgarage.domain.Client;
 
 
 import javax.servlet.ServletException;
@@ -34,12 +33,12 @@ public class RegisterServlet extends HttpServlet {
 
         try {
             Database.connect();
-            Database.jdbi.withExtension(UserDao.class, dao -> dao.addUser(username, email, phonenumber, userpassword, role));
-            User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(username, userpassword));
+            Database.jdbi.withExtension(ClientDao.class, dao -> dao.addClient(username, email, phonenumber, userpassword, role));
+            Client client = Database.jdbi.withExtension(ClientDao.class, dao -> dao.getClient(username, userpassword));
             HttpSession session = request.getSession();
-            session.setAttribute("id", user.getId());
-            session.setAttribute("username", user.getUsername());
-            session.setAttribute("role", user.getRole());
+            session.setAttribute("id", client.getId());
+            session.setAttribute("username", client.getUsername());
+            session.setAttribute("role", client.getRole());
             response.getWriter().print("ok");
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();

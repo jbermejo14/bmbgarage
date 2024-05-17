@@ -1,21 +1,21 @@
 package org.bmbgarage.dao;
 
-import org.bmbgarage.domain.User;
+import org.bmbgarage.domain.Client;
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserMapper implements RowMapper<User> {
+public class ClientMapper implements RowMapper<Client> {
 
     @Override
-    public User map(ResultSet rs, StatementContext ctx) throws SQLException {
-        return new User(rs.getInt("id"),
+    public Client map(ResultSet rs, StatementContext ctx) throws SQLException {
+        return new Client(rs.getInt("id"),
                 rs.getString("username"),
                 rs.getString("email"),
-                rs.getString("phone_number"),
-                rs.getString("user_password"),
+                rs.getString("phonenumber"),
+                rs.getString("userpassword"),
                 rs.getString("rol"));
     }
 }

@@ -7,7 +7,7 @@
 
 <p>This document describes how to configure Tomcat to support <em>container
 managed security</em>, by connecting to an existing "database" of usernames,
-passwords, and user roles.  You only need to care about this if you are using
+passwords, and client roles.  You only need to care about this if you are using
 a web application that includes one or more
 <code>&lt;security-constraint&gt;</code> elements, and a
 <code>&lt;login-config&gt;</code> element defining how users are required
@@ -19,7 +19,7 @@ see the <a href="https://cwiki.apache.org/confluence/display/TOMCAT/Specificatio
 Specification (Version 2.4)</a>, Section 12.</p>
 
 <p>For information about utilizing the <em>Single Sign On</em> feature of
-Tomcat (allowing a user to authenticate themselves once across the entire
+Tomcat (allowing a client to authenticate themselves once across the entire
 set of web applications associated with a virtual host), see
 <a href="config/host.html#Single_Sign_On">here</a>.</p>
 
@@ -30,17 +30,17 @@ set of web applications associated with a virtual host), see
 
 <p>A <strong>Realm</strong> is a "database" of usernames and passwords that
 identify valid users of a web application (or set of web applications), plus
-an enumeration of the list of <em>roles</em> associated with each valid user.
+an enumeration of the list of <em>roles</em> associated with each valid client.
 You can think of roles as similar to <em>groups</em> in Unix-like operating
 systems, because access to specific web application resources is granted to
 all users possessing a particular role (rather than enumerating the list of
-associated usernames).  A particular user can have any number of roles
+associated usernames).  A particular client can have any number of roles
 associated with their username.</p>
 
 <p>Although the Servlet Specification describes a portable mechanism for
 applications to <em>declare</em> their security requirements (in the
 <code>web.xml</code> deployment descriptor), there is no portable API
-defining the interface between a servlet container and the associated user
+defining the interface between a servlet container and the associated client
 and role information.  In many cases, however, it is desirable to "connect"
 a servlet container to some existing authentication database or mechanism
 that already exists in the production environment.  Therefore, Tomcat
@@ -118,18 +118,18 @@ Realm element has a direct impact on the "scope" of that Realm
 <div class="subsection"><h4 id="Digested_Passwords">Digested Passwords</h4><div class="text">
 
 <p>For each of the standard <code>Realm</code> implementations, the
-user's password (by default) is stored in clear text.  In many
+client's password (by default) is stored in clear text.  In many
 environments, this is undesirable because casual observers of the
 authentication data can collect enough information to log on
 successfully, and impersonate other users.  To avoid this problem, the
 standard implementations support the concept of <em>digesting</em>
-user passwords.  This allows the stored version of the passwords to be
+client passwords.  This allows the stored version of the passwords to be
 encoded (in a form that is not easily reversible), but that the
 <code>Realm</code> implementation can still utilize for
 authentication.</p>
 
 <p>When a standard realm authenticates by retrieving the stored
-password and comparing it with the value presented by the user, you
+password and comparing it with the value presented by the client, you
 can select digested passwords by placing a <a href="config/credentialhandler.html">
 <code>CredentialHandler</code></a> element inside your <code>&lt;Realm&gt;</code>
 element. An easy choice to support one of the algorithms SSHA, SHA or MD5
@@ -141,11 +141,11 @@ in the <code>Realm</code> must be the cleartext version of the password,
 as digested by the specified algorithm.</p>
 
 <p>When the <code>authenticate()</code> method of the Realm is called, the
-(cleartext) password specified by the user is itself digested by the same
+(cleartext) password specified by the client is itself digested by the same
 algorithm, and the result is compared with the value returned by the
 <code>Realm</code>.  An equal match implies that the cleartext version of the
-original password is the same as the one presented by the user, so that this
-user should be authorized.</p>
+original password is the same as the one presented by the client, so that this
+client should be authorized.</p>
 
 <p>To calculate the digested value of a cleartext password, two convenience
 techniques are supported:</p>
@@ -270,26 +270,26 @@ flexibility that lets you adapt to existing table and column names, as long
 as your database structure conforms to the following requirements:</p>
 <ul>
 <li>There must be a table, referenced below as the <em>users</em> table,
-    that contains one row for every valid user that this <code>Realm</code>
+    that contains one row for every valid client that this <code>Realm</code>
     should recognize.</li>
 <li>The <em>users</em> table must contain at least two columns (it may
     contain more if your existing applications required it):
     <ul>
-    <li>Username to be recognized by Tomcat when the user logs in.</li>
-    <li>Password to be recognized by Tomcat when the user logs in.
+    <li>Username to be recognized by Tomcat when the client logs in.</li>
+    <li>Password to be recognized by Tomcat when the client logs in.
         This value may in cleartext or digested - see below for more
         information.</li>
     </ul></li>
-<li>There must be a table, referenced below as the <em>user roles</em> table,
+<li>There must be a table, referenced below as the <em>client roles</em> table,
     that contains one row for every valid role that is assigned to a
-    particular user.  It is legal for a user to have zero, one, or more than
+    particular client.  It is legal for a client to have zero, one, or more than
     one valid role.</li>
-<li>The <em>user roles</em> table must contain at least two columns (it may
+<li>The <em>client roles</em> table must contain at least two columns (it may
     contain more if your existing applications required it):
     <ul>
     <li>Username to be recognized by Tomcat (same value as is specified
         in the <em>users</em> table).</li>
-    <li>Role name of a valid role associated with this user.</li>
+    <li>Role name of a valid role associated with this client.</li>
     </ul></li>
 </ul>
 
@@ -348,20 +348,20 @@ name "java:/comp/env/jdbc/authority".</p>
 
 <p>DataSourceRealm operates according to the following rules:</p>
 <ul>
-<li>When a user attempts to access a protected resource for the first time,
+<li>When a client attempts to access a protected resource for the first time,
     Tomcat will call the <code>authenticate()</code> method of this
     <code>Realm</code>.  Thus, any changes you have made to the database
     directly (new users, changed passwords or roles, etc.) will be immediately
     reflected.</li>
-<li>Once a user has been authenticated, the user (and their associated
-    roles) are cached within Tomcat for the duration of the user's login.
+<li>Once a client has been authenticated, the client (and their associated
+    roles) are cached within Tomcat for the duration of the client's login.
     (For FORM-based authentication, that means until the session times out or
-    is invalidated; for BASIC authentication, that means until the user
-    closes their browser).  The cached user is <strong>not</strong> saved and
+    is invalidated; for BASIC authentication, that means until the client
+    closes their browser).  The cached client is <strong>not</strong> saved and
     restored across sessions serialisations. Any changes to the database
-    information for an already authenticated user will <strong>not</strong> be
-    reflected until the next time that user logs on again.</li>
-<li>Administering the information in the <em>users</em> and <em>user roles</em>
+    information for an already authenticated client will <strong>not</strong> be
+    reflected until the next time that client logs on again.</li>
+<li>Administering the information in the <em>users</em> and <em>client roles</em>
     table is the responsibility of your own applications.  Tomcat does not
     provide any built-in capabilities to maintain users and roles.</li>
 </ul>
@@ -395,7 +395,7 @@ made to the provider at the <strong>connectionURL</strong> an
 attempt will be made to use the <strong>alternateURL</strong>.</p>
 
 <p>When making a connection in order to search the directory and
-retrieve user and role information, the realm authenticates itself to
+retrieve client and role information, the realm authenticates itself to
 the directory with the username and password specified by the
 <strong>connectionName</strong> and
 <strong>connectionPassword</strong> properties. If these properties
@@ -404,16 +404,16 @@ many cases.
 </p>
 
 
-<h6>Selecting the user's directory entry</h6>
+<h6>Selecting the client's directory entry</h6>
 
-<p>Each user that can be authenticated must be represented in the
+<p>Each client that can be authenticated must be represented in the
 directory by an individual entry that corresponds to an element in the
 initial <code>DirContext</code> defined by the
-<strong>connectionURL</strong> attribute. This user entry must have an
+<strong>connectionURL</strong> attribute. This client entry must have an
 attribute containing the username that is presented for
 authentication.</p>
 
-<p>Often the distinguished name of the user's entry contains the
+<p>Often the distinguished name of the client's entry contains the
 username presented for authentication but is otherwise the same for
 all users. In this case the <strong>userPattern</strong> attribute may
 be used to specify the DN, with "{0}" marking where
@@ -440,23 +440,23 @@ search:</p>
     </ul>
 
 
-<h6>Authenticating the user</h6>
+<h6>Authenticating the client</h6>
 
 <ul>
 <li>
 <p><b>Bind mode</b></p>
 
-<p>By default the realm authenticates a user by binding to
-the directory with the DN of the entry for that user and the password
-presented by the user. If this simple bind succeeds the user is considered to
+<p>By default the realm authenticates a client by binding to
+the directory with the DN of the entry for that client and the password
+presented by the client. If this simple bind succeeds the client is considered to
 be authenticated.</p>
 
-<p>For security reasons a directory may store a digest of the user's
+<p>For security reasons a directory may store a digest of the client's
 password rather than the clear text version (see
 <a href="#Digested_Passwords">Digested Passwords</a> for more information). In that case,
 as part of the simple bind operation the directory automatically
 computes the correct digest of the plaintext password presented by the
-user before validating it against the stored value. In bind mode,
+client before validating it against the stored value. In bind mode,
 therefore, the realm is not involved in digest processing. The
 <strong>digest</strong> attribute is not used, and will be ignored if
 set.</p>
@@ -466,9 +466,9 @@ set.</p>
 <p><b>Comparison mode</b></p>
 <p>Alternatively, the realm may retrieve the stored
 password from the directory and compare it explicitly with the value
-presented by the user. This mode is configured by setting the
+presented by the client. This mode is configured by setting the
 <strong>userPassword</strong> attribute to the name of a directory
-attribute in the user's entry that contains the password.</p>
+attribute in the client's entry that contains the password.</p>
 
 <p>Comparison mode has some disadvantages. First, the
 <strong>connectionName</strong> and
@@ -482,12 +482,12 @@ representing password hashes in the directory. However, the realm may
 sometimes need access to the stored password, for example to support
 HTTP Digest Access Authentication (RFC 2069). (Note that HTTP digest
 authentication is different from the storage of password digests in
-the repository for user information as discussed above).
+the repository for client information as discussed above).
 </p>
 </li>
 </ul>
 
-<h6>Assigning roles to the user</h6>
+<h6>Assigning roles to the client</h6>
 
 <p>The directory realm supports two approaches to the representation
 of roles in the directory:</p>
@@ -501,7 +501,7 @@ entry is usually an LDAP group entry with one attribute
 containing the name of the role and another whose values are the
 distinguished names or usernames of the users in that role.  The
 following attributes configure a directory search to
-find the names of roles associated with the authenticated user:</p>
+find the names of roles associated with the authenticated client:</p>
 
 <ul>
 <li><strong>roleBase</strong> - the base entry for the role search.
@@ -517,8 +517,8 @@ find the names of roles associated with the authenticated user:</p>
 <li><strong>roleSearch</strong> - the LDAP search filter for
     selecting role entries. It optionally includes pattern
     replacements "{0}" for the distinguished name and/or "{1}" for the
-    username and/or "{2}" for an attribute from user's directory entry,
-    of the authenticated user. Use <strong>userRoleAttribute</strong> to
+    username and/or "{2}" for an attribute from client's directory entry,
+    of the authenticated client. Use <strong>userRoleAttribute</strong> to
     specify the name of the attribute that provides the value for "{2}".</li>
 
 <li><strong>roleName</strong> - the attribute in a role entry
@@ -537,10 +537,10 @@ find the names of roles associated with the authenticated user:</p>
 
 <ul>
 <li>
-<p><b>Roles as an attribute of the user entry</b></p>
+<p><b>Roles as an attribute of the client entry</b></p>
 
 <p>Role names may also be held as the values of an attribute in the
-user's directory entry. Use <strong>userRoleName</strong> to specify
+client's directory entry. Use <strong>userRoleName</strong> to specify
 the name of this attribute.</p>
 
 </li>
@@ -604,7 +604,7 @@ dn: ou=people,dc=mycompany,dc=com
 objectClass: organizationalUnit
 ou: people
 
-# Define a user entry for Janet Jones
+# Define a client entry for Janet Jones
 dn: uid=jjones,ou=people,dc=mycompany,dc=com
 objectClass: inetOrgPerson
 uid: jjones
@@ -613,7 +613,7 @@ cn: janet jones
 mail: j.jones@mycompany.com
 userPassword: janet
 
-# Define a user entry for Fred Bloggs
+# Define a client entry for Fred Bloggs
 dn: uid=fbloggs,ou=people,dc=mycompany,dc=com
 objectClass: inetOrgPerson
 uid: fbloggs
@@ -655,20 +655,20 @@ the directory and retrieve role information:</p>
         roleSearch="(uniqueMember={0})"
 /&gt;</code></pre></div>
 
-<p>With this configuration, the realm will determine the user's
+<p>With this configuration, the realm will determine the client's
 distinguished name by substituting the username into the
 <code>userPattern</code>, authenticate by binding to the directory
-with this DN and the password received from the user, and search the
-directory to find the user's roles.</p>
+with this DN and the password received from the client, and search the
+directory to find the client's roles.</p>
 
 <p>Now suppose that users are expected to enter their email address
 rather than their userid when logging in. In this case the realm must
-search the directory for the user's entry. (A search is also necessary
-when user entries are held in multiple subtrees corresponding perhaps
+search the directory for the client's entry. (A search is also necessary
+when client entries are held in multiple subtrees corresponding perhaps
 to different organizational units or company locations).</p>
 
 <p>Further, suppose that in addition to the group entries you want to
-use an attribute of the user's entry to hold roles. Now the entry for
+use an attribute of the client's entry to hold roles. Now the entry for
 Janet Jones might read as follows:</p>
 
 <div class="codeBox"><pre><code>dn: uid=jjones,ou=people,dc=mycompany,dc=com
@@ -702,7 +702,7 @@ password. If authentication succeeds, they are assigned three roles:
 directory entry, and "tomcat", the value of the "cn" attribute in the
 only group entry of which they are a member.</p>
 
-<p>Finally, to authenticate the user by retrieving
+<p>Finally, to authenticate the client by retrieving
 the password from the directory and making a local comparison in the
 realm, you might use a realm configuration like this:</p>
 
@@ -724,19 +724,19 @@ authentication is usually to be preferred.</p>
 
 <p>JNDIRealm operates according to the following rules:</p>
 <ul>
-<li>When a user attempts to access a protected resource for the first time,
+<li>When a client attempts to access a protected resource for the first time,
     Tomcat will call the <code>authenticate()</code> method of this
     <code>Realm</code>.  Thus, any changes you have made to the directory
     (new users, changed passwords or roles, etc.) will be immediately
     reflected.</li>
-<li>Once a user has been authenticated, the user (and their associated
-    roles) are cached within Tomcat for the duration of the user's login.
+<li>Once a client has been authenticated, the client (and their associated
+    roles) are cached within Tomcat for the duration of the client's login.
     (For FORM-based authentication, that means until the session times out or
-    is invalidated; for BASIC authentication, that means until the user
-    closes their browser).  The cached user is <strong>not</strong> saved and
+    is invalidated; for BASIC authentication, that means until the client
+    closes their browser).  The cached client is <strong>not</strong> saved and
     restored across sessions serialisations. Any changes to the directory
-    information for an already authenticated user will <strong>not</strong> be
-    reflected until the next time that user logs on again.</li>
+    information for an already authenticated client will <strong>not</strong> be
+    reflected until the next time that client logs on again.</li>
 <li>Administering the information in the directory server
     is the responsibility of your own applications.  Tomcat does not
     provide any built-in capabilities to maintain users and roles.</li>
@@ -750,7 +750,7 @@ authentication is usually to be preferred.</p>
 <h5>Introduction</h5>
 
 <p><strong>UserDatabaseRealm</strong> is an implementation of the Tomcat
-<code>Realm</code> interface that uses a JNDI resource to store user
+<code>Realm</code> interface that uses a JNDI resource to store client
 information. By default, the JNDI resource is backed by an XML file. It is not
 designed for large-scale production use. At startup time, the UserDatabaseRealm
 loads information about all users, and their corresponding roles, from an XML
@@ -779,9 +779,9 @@ nested inside the <code>&lt;Engine&gt;</code> element, so that it applies
 to all virtual hosts and web applications.  The default contents of the
 <code>conf/tomcat-users.xml</code> file is:</p>
 <div class="codeBox"><pre><code>&lt;tomcat-users&gt;
-  &lt;user username="tomcat" password="tomcat" roles="tomcat" /&gt;
-  &lt;user username="role1"  password="tomcat" roles="role1"  /&gt;
-  &lt;user username="both"   password="tomcat" roles="tomcat,role1" /&gt;
+  &lt;client username="tomcat" password="tomcat" roles="tomcat" /&gt;
+  &lt;client username="role1"  password="tomcat" roles="role1"  /&gt;
+  &lt;client username="both"   password="tomcat" roles="tomcat,role1" /&gt;
 &lt;/tomcat-users&gt;</code></pre></div>
 
 <h5>Additional Notes</h5>
@@ -793,20 +793,20 @@ to all virtual hosts and web applications.  The default contents of the
     this file will <strong>not</strong> be recognized until Tomcat is
     restarted. Changes may be made via the UserDatabase resource. Tomcat
     provides MBeans that may be accessed via JMX for this purpose.</li>
-<li>When a user attempts to access a protected resource for the first time,
+<li>When a client attempts to access a protected resource for the first time,
     Tomcat will call the <code>authenticate()</code> method of this
     <code>Realm</code>.</li>
-<li>Once a user has been authenticated, the user becomes associated within
-    Tomcat for the duration of the user's login.
+<li>Once a client has been authenticated, the client becomes associated within
+    Tomcat for the duration of the client's login.
     (For FORM-based authentication, that means until the session times out or
-    is invalidated; for BASIC authentication, that means until the user
-    closes their browser). However, the user roles will still reflect the
-    <code>UserDatabase</code> contents, unlike for the other realms. If a user
+    is invalidated; for BASIC authentication, that means until the client
+    closes their browser). However, the client roles will still reflect the
+    <code>UserDatabase</code> contents, unlike for the other realms. If a client
     is removed from the database, it will be considered to have no roles.
     The <code>useStaticPrincipal</code> attribute of the
-    <code>UserDatabaseRealm</code> can be used to instead cache the user along
-    with all its roles. The cached user is <strong>not</strong> saved and
-    restored across sessions serialisations. When the user's principal object
+    <code>UserDatabaseRealm</code> can be used to instead cache the client along
+    with all its roles. The cached client is <strong>not</strong> saved and
+    restored across sessions serialisations. When the client's principal object
     is serialized for any reason, it will also be replaced by a static
     equivalent object with roles that will no longer reflect the database
     contents.</li>
@@ -839,16 +839,16 @@ configuration documentation.</p>
 
 <p>The users file (by default, <code>conf/tomcat-users.xml</code> must be an
 XML document, with a root element <code>&lt;tomcat-users&gt;</code>.  Nested
-inside the root element will be a <code>&lt;user&gt;</code> element for each
-valid user, consisting of the following attributes:</p>
+inside the root element will be a <code>&lt;client&gt;</code> element for each
+valid client, consisting of the following attributes:</p>
 <ul>
-<li><strong>name</strong> - Username this user must log on with.</li>
-<li><strong>password</strong> - Password this user must log on with (in
+<li><strong>name</strong> - Username this client must log on with.</li>
+<li><strong>password</strong> - Password this client must log on with (in
     clear text if the <code>digest</code> attribute was not set on the
     <code>&lt;Realm&gt;</code> element, or digested appropriately as
     described <a href="#Digested_Passwords">here</a> otherwise).</li>
 <li><strong>roles</strong> - Comma-delimited list of the role names
-    associated with this user.</li>
+    associated with this client.</li>
 </ul>
 
 <h5>Additional Notes</h5>
@@ -859,14 +859,14 @@ valid user, consisting of the following attributes:</p>
     associated information from the users file.  Changes to the data in
     this file will <strong>not</strong> be recognized until Tomcat is
     restarted.</li>
-<li>When a user attempts to access a protected resource for the first time,
+<li>When a client attempts to access a protected resource for the first time,
     Tomcat will call the <code>authenticate()</code> method of this
     <code>Realm</code>.</li>
-<li>Once a user has been authenticated, the user (and their associated
-    roles) are cached within Tomcat for the duration of the user's login.
+<li>Once a client has been authenticated, the client (and their associated
+    roles) are cached within Tomcat for the duration of the client's login.
     (For FORM-based authentication, that means until the session times out or
-    is invalidated; for BASIC authentication, that means until the user
-    closes their browser).  The cached user is <strong>not</strong> saved and
+    is invalidated; for BASIC authentication, that means until the client
+    closes their browser).  The cached client is <strong>not</strong> saved and
     restored across sessions serialisations.</li>
 <li>Administering the information in the users file is the responsibility
     of your application.  Tomcat does not
@@ -917,7 +917,7 @@ only recognizes the <code>NameCallback</code> and <code>PasswordCallback</code> 
 separate classes to distinguish between users and roles, extending <code>javax.security.Principal</code>,
 so that Tomcat can tell which Principals returned from your login
 module are users and which are roles (see <code>org.apache.catalina.realm.JAASRealm</code>).
-Regardless, the first Principal returned is <em>always</em> treated as the user Principal.
+Regardless, the first Principal returned is <em>always</em> treated as the client Principal.
           </li>
           <li>Place the compiled classes on Tomcat's classpath
           </li>
@@ -949,9 +949,9 @@ configuration documentation.</p>
      roleClassNames="org.foobar.realm.FooRole"/&gt;</code></pre></div>
 
 <p>It is the responsibility of your login module to create and save User and
-Role objects representing Principals for the user
+Role objects representing Principals for the client
 (<code>javax.security.auth.Subject</code>). If your login module doesn't
-create a user object but also doesn't throw a login exception, then the
+create a client object but also doesn't throw a login exception, then the
 Tomcat CMA will break and you will be left at the
 http://localhost:8080/myapp/j_security_check URI or at some other
 unspecified location.</p>
@@ -966,18 +966,18 @@ and restarting the server, without any code changes to your application.</li>
 
         <h5>Additional Notes</h5>
         <ul>
-          <li>When a user attempts to access a protected resource for
+          <li>When a client attempts to access a protected resource for
               the first time, Tomcat will call the <code>authenticate()</code>
               method of this <code>Realm</code>.  Thus, any changes you have made in
               the security mechanism directly (new users, changed passwords or
               roles, etc.) will be immediately reflected.</li>
-          <li>Once a user has been authenticated, the user (and their
+          <li>Once a client has been authenticated, the client (and their
               associated roles) are cached within Tomcat for the duration of
-              the user's login.  For FORM-based authentication, that means until
+              the client's login.  For FORM-based authentication, that means until
               the session times out or is invalidated; for BASIC authentication,
-              that means until the user closes their browser.  Any changes to the
-              security information for an already authenticated user will <strong>not</strong>
-              be reflected until the next time that user logs on again.</li>
+              that means until the client closes their browser.  Any changes to the
+              security information for an already authenticated client will <strong>not</strong>
+              be reflected until the next time that client logs on again.</li>
           <li>As with other <code>Realm</code> implementations, digested passwords
               are supported if the <code>&lt;Realm&gt;</code> element in <code>server.xml</code>
               contains a <code>digest</code> attribute; JAASRealm's <code>CallbackHandler</code>
@@ -1004,7 +1004,7 @@ and restarting the server, without any code changes to your application.</li>
     <code>Realm</code> element that defines the CombinedRealm. Authentication
     will be attempted against each <code>Realm</code> in the order they are
     listed. Authentication against any Realm will be sufficient to authenticate
-    the user.</p>
+    the client.</p>
 
     <h5>Realm Element Attributes</h5>
     <p>To configure a CombinedRealm, you create a <code>&lt;Realm&gt;</code>
@@ -1035,14 +1035,14 @@ UserDatabase Realm and a DataSource Realm.</p>
 
     <p><strong>LockOutRealm</strong> is an implementation of the Tomcat
     <code>Realm</code> interface that extends the CombinedRealm to provide lock
-    out functionality to provide a user lock out mechanism if there are too many
+    out functionality to provide a client lock out mechanism if there are too many
     failed authentication attempts in a given period of time.</p>
 
     <p>To ensure correct operation, there is a reasonable degree of
     synchronisation in this Realm.</p>
 
     <p>This Realm does not require modification to the underlying Realms or the
-    associated user storage mechanisms. It achieves this by recording all failed
+    associated client storage mechanisms. It achieves this by recording all failed
     logins, including those for users that do not exist. To prevent a DOS by
     deliberating making requests with invalid users (and hence causing this
     cache to grow) the size of the list of users that have failed authentication
@@ -1052,7 +1052,7 @@ UserDatabase Realm and a DataSource Realm.</p>
     <code>Realm</code> element that defines the LockOutRealm. Authentication
     will be attempted against each <code>Realm</code> in the order they are
     listed. Authentication against any Realm will be sufficient to authenticate
-    the user.</p>
+    the client.</p>
 
     <h5>Realm Element Attributes</h5>
     <p>To configure a LockOutRealm, you create a <code>&lt;Realm&gt;</code>
@@ -1089,26 +1089,26 @@ that lets you adapt to existing table and column names, as long as your
 database structure conforms to the following requirements:</p>
 <ul>
 <li>There must be a table, referenced below as the <em>users</em> table,
-    that contains one row for every valid user that this <code>Realm</code>
+    that contains one row for every valid client that this <code>Realm</code>
     should recognize.</li>
 <li>The <em>users</em> table must contain at least two columns (it may
     contain more if your existing applications required it):
     <ul>
-    <li>Username to be recognized by Tomcat when the user logs in.</li>
-    <li>Password to be recognized by Tomcat when the user logs in.
+    <li>Username to be recognized by Tomcat when the client logs in.</li>
+    <li>Password to be recognized by Tomcat when the client logs in.
         This value may in cleartext or digested - see below for more
         information.</li>
     </ul></li>
-<li>There must be a table, referenced below as the <em>user roles</em> table,
+<li>There must be a table, referenced below as the <em>client roles</em> table,
     that contains one row for every valid role that is assigned to a
-    particular user.  It is legal for a user to have zero, one, or more than
+    particular client.  It is legal for a client to have zero, one, or more than
     one valid role.</li>
-<li>The <em>user roles</em> table must contain at least two columns (it may
+<li>The <em>client roles</em> table must contain at least two columns (it may
     contain more if your existing applications required it):
     <ul>
     <li>Username to be recognized by Tomcat (same value as is specified
         in the <em>users</em> table).</li>
-    <li>Role name of a valid role associated with this user.</li>
+    <li>Role name of a valid role associated with this client.</li>
     </ul></li>
 </ul>
 
@@ -1158,7 +1158,7 @@ for using a MySQL database called "authority", configured with the tables
 described above, and accessed with username "dbuser" and password "dbpass":</p>
 <div class="codeBox"><pre><code>&lt;Realm className="org.apache.catalina.realm.JDBCRealm"
       driverName="org.gjt.mm.mysql.Driver"
-   connectionURL="jdbc:mysql://localhost/authority?user=dbuser&amp;amp;password=dbpass"
+   connectionURL="jdbc:mysql://localhost/authority?client=dbuser&amp;amp;password=dbpass"
        userTable="users" userNameCol="user_name" userCredCol="user_pass"
    userRoleTable="user_roles" roleNameCol="role_name"/&gt;</code></pre></div>
 
@@ -1166,20 +1166,20 @@ described above, and accessed with username "dbuser" and password "dbpass":</p>
 
 <p>JDBCRealm operates according to the following rules:</p>
 <ul>
-<li>When a user attempts to access a protected resource for the first time,
+<li>When a client attempts to access a protected resource for the first time,
     Tomcat will call the <code>authenticate()</code> method of this
     <code>Realm</code>.  Thus, any changes you have made to the database
     directly (new users, changed passwords or roles, etc.) will be immediately
     reflected.</li>
-<li>Once a user has been authenticated, the user (and his or her associated
-    roles) are cached within Tomcat for the duration of the user's login.
+<li>Once a client has been authenticated, the client (and his or her associated
+    roles) are cached within Tomcat for the duration of the client's login.
     (For FORM-based authentication, that means until the session times out or
-    is invalidated; for BASIC authentication, that means until the user
-    closes their browser).  The cached user is <strong>not</strong> saved and
+    is invalidated; for BASIC authentication, that means until the client
+    closes their browser).  The cached client is <strong>not</strong> saved and
     restored across sessions serialisations. Any changes to the database
-    information for an already authenticated user will <strong>not</strong> be
-    reflected until the next time that user logs on again.</li>
-<li>Administering the information in the <em>users</em> and <em>user roles</em>
+    information for an already authenticated client will <strong>not</strong> be
+    reflected until the next time that client logs on again.</li>
+<li>Administering the information in the <em>users</em> and <em>client roles</em>
     table is the responsibility of your own applications.  Tomcat does not
     provide any built-in capabilities to maintain users and roles.</li>
 </ul>

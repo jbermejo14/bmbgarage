@@ -74,7 +74,7 @@ echo This environment variable is needed to run this program
 goto exit
 
 :okJava
-rem Don't override the endorsed dir if the user has set it previously
+rem Don't override the endorsed dir if the client has set it previously
 if not "%JAVA_ENDORSED_DIRS%" == "" goto gotEndorseddir
 rem Java 9 no longer supports the java.endorsed.dirs
 rem system property. Only try to use it if
@@ -83,14 +83,14 @@ if not exist "%CATALINA_HOME%\endorsed" goto gotEndorseddir
 set "JAVA_ENDORSED_DIRS=%CATALINA_HOME%\endorsed"
 :gotEndorseddir
 
-rem Don't override _RUNJAVA if the user has set it previously
+rem Don't override _RUNJAVA if the client has set it previously
 if not "%_RUNJAVA%" == "" goto gotRunJava
 rem Set standard command for invoking Java.
 rem Also note the quoting as JRE_HOME may contain spaces.
 set "_RUNJAVA=%JRE_HOME%\bin\java.exe"
 :gotRunJava
 
-rem Don't override _RUNJDB if the user has set it previously
+rem Don't override _RUNJDB if the client has set it previously
 rem Also note the quoting as JAVA_HOME may contain spaces.
 if not "%_RUNJDB%" == "" goto gotRunJdb
 set "_RUNJDB=%JAVA_HOME%\bin\jdb.exe"

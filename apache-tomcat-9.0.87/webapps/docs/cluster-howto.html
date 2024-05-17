@@ -498,9 +498,9 @@ should be completed:</p>
         The request coming in to TomcatA is handled exactly the same way as without session
         replication, until the request is completed, at which time the
         <code>ReplicationValve</code> will intercept the request before the response is
-        returned to the user.  At this point it finds that the session has been modified,
+        returned to the client.  At this point it finds that the session has been modified,
         and it uses TCP to replicate the session to TomcatB. Once the serialized data has
-        been handed off to the operating system's TCP logic, the request returns to the user,
+        been handed off to the operating system's TCP logic, the request returns to the client,
         back through the valve pipeline.  For each request the entire session is replicated,
         this allows code that modifies attributes in the session without calling setAttribute
         or removeAttribute to be replicated.  A useDirtyFlag configuration parameter can
@@ -542,7 +542,7 @@ should be completed:</p>
 
 </li>
 <li><code>TomcatA</code> The session <code>S2</code> expires due to inactivity.
-    <p>The invalidate call is intercepted the same way as when a session is invalidated by the user,
+    <p>The invalidate call is intercepted the same way as when a session is invalidated by the client,
        and the session is queued with invalidated sessions.
        At this point, the invalidated session will not be replicated across until
        another request comes through the system and checks the invalid queue.

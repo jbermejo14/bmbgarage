@@ -45,34 +45,34 @@
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 07-May-2024 00:01:37.364 SEVERE [http-nio-8082-exec-135] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
@@ -81,34 +81,34 @@ id cannot be resolved to a variable
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
@@ -971,34 +971,34 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 07-May-2024 00:08:27.573 SEVERE [http-nio-8082-exec-170] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
@@ -1007,34 +1007,34 @@ id cannot be resolved to a variable
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
@@ -1446,34 +1446,34 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 07-May-2024 00:41:10.857 SEVERE [http-nio-8082-exec-237] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
@@ -1482,34 +1482,34 @@ id cannot be resolved to a variable
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [21] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [21] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to int
 18: 
 19: </head>
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 Type mismatch: cannot convert from Object to User
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
 
 
-An error occurred at line: [23] in the jsp file: [/user-profile.jsp]
+An error occurred at line: [23] in the jsp file: [/client-profile.jsp]
 id cannot be resolved to a variable
 20: <%
 21:     userId = currentSession.getAttribute("id");
 22:     Database.connect();
-23:     User user = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
+23:     User client = Database.jdbi.withExtension(UserDao.class, dao -> dao.getUser(id));
 24: %>
 25: <main>
 26:     <section class="py-5 text-center container">
@@ -3370,19 +3370,19 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-07-May-2024 15:24:07.849 SEVERE [http-nio-8082-exec-425] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [28]
+07-May-2024 15:24:07.849 SEVERE [http-nio-8082-exec-425] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [28]
 
 25: 
 26:             </div>
 27:             <div class="card-body">
-28:                 <h5 class="card-title">Nombre de usuario: <%= user.getUsername() %></h5>
-29:                 <p class="card-text">Telefono:: <%= user.getTelephone() %></p>
+28:                 <h5 class="card-title">Nombre de usuario: <%= client.getUsername() %></h5>
+29:                 <p class="card-text">Telefono:: <%= client.getTelephone() %></p>
 30:             </div>
 31:         </div>
 
 
 Stacktrace:] with root cause
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at org.apache.jsp.user_002dprofile_jsp._jspService(user_002dprofile_jsp.java:226)
 		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -3412,19 +3412,19 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-07-May-2024 15:35:44.324 SEVERE [http-nio-8082-exec-444] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [23]
+07-May-2024 15:35:44.324 SEVERE [http-nio-8082-exec-444] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [23]
 
 20:         <h1>Tu Perfil:</h1>
 21:     </section>
 22:     <div class="container">
-23:         <h5 class="card-title">Nombre de usuario: <%= user.getUsername() %></h5>
-24:         <p class="card-text">Telefono: <%= user.getTelephone() %></p>
+23:         <h5 class="card-title">Nombre de usuario: <%= client.getUsername() %></h5>
+24:         <p class="card-text">Telefono: <%= client.getTelephone() %></p>
 25: 
 26:         <a href="edit-car.jsp" class="nav-link px-2 text-white">Editar Perfil</a>
 
 
 Stacktrace:] with root cause
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at org.apache.jsp.user_002dprofile_jsp._jspService(user_002dprofile_jsp.java:221)
 		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -3456,18 +3456,18 @@ Stacktrace:] with root cause
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 07-May-2024 15:37:07.093 SEVERE [http-nio-8082-exec-454] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [Unable to compile class for JSP: 
 
-An error occurred at line: [56] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [56] in the jsp file: [/edit-client.jsp]
 id cannot be resolved to a variable
 53:             <div class="mb-3">
 54:                 <label for="username" class="form-label">Nombre de usuario:</label>
 55:                 <input type="text" name="username" class="form-control" id="username"
-56:                     <% if (id != 0) { %> value="<%= user.getUsername() %>"<% } %>>
+56:                     <% if (id != 0) { %> value="<%= client.getUsername() %>"<% } %>>
 57:             </div>
 58: 
 59:             <div class="mb-3">
 
 
-An error occurred at line: [62] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [62] in the jsp file: [/edit-client.jsp]
 id cannot be resolved to a variable
 59:             <div class="mb-3">
 60:                 <label for="telephone" class="form-label">Telefono</label>
@@ -3478,7 +3478,7 @@ id cannot be resolved to a variable
 65:             <div class="col-12">
 
 
-An error occurred at line: [62] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [62] in the jsp file: [/edit-client.jsp]
 car cannot be resolved
 59:             <div class="mb-3">
 60:                 <label for="telephone" class="form-label">Telefono</label>
@@ -3489,7 +3489,7 @@ car cannot be resolved
 65:             <div class="col-12">
 
 
-An error occurred at line: [68] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [68] in the jsp file: [/edit-client.jsp]
 id cannot be resolved to a variable
 65:             <div class="col-12">
 66:                 <input type="submit" value="Enviar" id="edit-button"/>
@@ -3503,18 +3503,18 @@ id cannot be resolved to a variable
 Stacktrace:] with root cause
 	org.apache.jasper.JasperException: Unable to compile class for JSP: 
 
-An error occurred at line: [56] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [56] in the jsp file: [/edit-client.jsp]
 id cannot be resolved to a variable
 53:             <div class="mb-3">
 54:                 <label for="username" class="form-label">Nombre de usuario:</label>
 55:                 <input type="text" name="username" class="form-control" id="username"
-56:                     <% if (id != 0) { %> value="<%= user.getUsername() %>"<% } %>>
+56:                     <% if (id != 0) { %> value="<%= client.getUsername() %>"<% } %>>
 57:             </div>
 58: 
 59:             <div class="mb-3">
 
 
-An error occurred at line: [62] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [62] in the jsp file: [/edit-client.jsp]
 id cannot be resolved to a variable
 59:             <div class="mb-3">
 60:                 <label for="telephone" class="form-label">Telefono</label>
@@ -3525,7 +3525,7 @@ id cannot be resolved to a variable
 65:             <div class="col-12">
 
 
-An error occurred at line: [62] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [62] in the jsp file: [/edit-client.jsp]
 car cannot be resolved
 59:             <div class="mb-3">
 60:                 <label for="telephone" class="form-label">Telefono</label>
@@ -3536,7 +3536,7 @@ car cannot be resolved
 65:             <div class="col-12">
 
 
-An error occurred at line: [68] in the jsp file: [/edit-user.jsp]
+An error occurred at line: [68] in the jsp file: [/edit-client.jsp]
 id cannot be resolved to a variable
 65:             <div class="col-12">
 66:                 <input type="submit" value="Enviar" id="edit-button"/>
@@ -3697,19 +3697,19 @@ Stacktrace:
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-07-May-2024 15:47:15.768 SEVERE [http-nio-8082-exec-478] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/user-profile.jsp] at line [23]
+07-May-2024 15:47:15.768 SEVERE [http-nio-8082-exec-478] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/client-profile.jsp] at line [23]
 
 20:         <h1>Tu Perfil:</h1>
 21:     </section>
 22:     <div class="container">
-23:         <h5 class="card-title">Nombre de usuario: <%= user.getUsername() %></h5>
-24:         <p class="card-text">Telefono: <%= user.getTelephone() %></p>
+23:         <h5 class="card-title">Nombre de usuario: <%= client.getUsername() %></h5>
+24:         <p class="card-text">Telefono: <%= client.getTelephone() %></p>
 25: 
-26:         <a href="edit-user.jsp" class="nav-link px-2 text-white">Editar Perfil</a>
+26:         <a href="edit-client.jsp" class="nav-link px-2 text-white">Editar Perfil</a>
 
 
 Stacktrace:] with root cause
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at org.apache.jsp.user_002dprofile_jsp._jspService(user_002dprofile_jsp.java:221)
 		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -3971,19 +3971,19 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-07-May-2024 16:13:20.963 SEVERE [http-nio-8082-exec-526] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/edit-user.jsp] at line [56]
+07-May-2024 16:13:20.963 SEVERE [http-nio-8082-exec-526] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/edit-client.jsp] at line [56]
 
 53:             <div class="mb-3">
 54:                 <label for="username" class="form-label">Nombre de usuario:</label>
 55:                 <input type="text" name="username" class="form-control" id="username"
-56:                     value="<%= user.getUsername() %>">
+56:                     value="<%= client.getUsername() %>">
 57:             </div>
 58: 
 59:             <div class="mb-3">
 
 
 Stacktrace:] with root cause
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at org.apache.jsp.edit_002duser_jsp._jspService(edit_002duser_jsp.java:250)
 		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -4013,19 +4013,19 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
-07-May-2024 16:13:23.546 SEVERE [http-nio-8082-exec-531] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/edit-user.jsp] at line [56]
+07-May-2024 16:13:23.546 SEVERE [http-nio-8082-exec-531] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/bermecars] threw exception [An exception occurred processing [/edit-client.jsp] at line [56]
 
 53:             <div class="mb-3">
 54:                 <label for="username" class="form-label">Nombre de usuario:</label>
 55:                 <input type="text" name="username" class="form-control" id="username"
-56:                     value="<%= user.getUsername() %>">
+56:                     value="<%= client.getUsername() %>">
 57:             </div>
 58: 
 59:             <div class="mb-3">
 
 
 Stacktrace:] with root cause
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at org.apache.jsp.edit_002duser_jsp._jspService(edit_002duser_jsp.java:250)
 		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -4240,7 +4240,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 07-May-2024 16:26:58.480 SEVERE [http-nio-8082-exec-553] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.EditUserServlet] in context with path [/bermecars] threw exception
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getId()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getId()" because "client" is null
 		at com.bermecar.servlet.EditUserServlet.doPost(EditUserServlet.java:40)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -4267,7 +4267,7 @@ Stacktrace:] with root cause
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 07-May-2024 16:28:08.489 SEVERE [http-nio-8082-exec-561] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.EditUserServlet] in context with path [/bermecars] threw exception
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at com.bermecar.servlet.EditUserServlet.doPost(EditUserServlet.java:40)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -4437,7 +4437,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4484,7 +4484,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4630,7 +4630,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4677,7 +4677,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4823,7 +4823,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4870,7 +4870,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4950,7 +4950,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -4997,7 +4997,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -5209,7 +5209,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -5256,7 +5256,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -5336,7 +5336,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">
@@ -5383,7 +5383,7 @@ role cannot be resolved
 26: %>
 27: 
 28: <%
-29:     if (role.equals("user")) {
+29:     if (role.equals("client")) {
 30: %>
 31: <header data-bs-theme="dark">
 32:     <div class="navbar navbar-dark bg-black shadow-sm">

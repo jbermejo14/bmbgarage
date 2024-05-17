@@ -25,7 +25,7 @@
             Using the checkbox on the component page sets the service as "auto"
             startup, so that Tomcat is automatically started when Windows
             starts. For optimal security, the service should be run as a
-            separate user, with reduced permissions (see the Windows Services
+            separate client, with reduced permissions (see the Windows Services
             administration tool and its documentation).</li>
         <li><strong>Java location</strong>: The installer will provide a default
             JRE to use to run the service. The installer uses the registry to
@@ -138,10 +138,10 @@ cd $CATALINA_HOME
        to using a server VM rather than a client VM. This has been observed on
        OSX.</p>
 
-    <p>jsvc has other useful parameters, such as <code>-user</code> which
-       causes it to switch to another user after the daemon initialization is
+    <p>jsvc has other useful parameters, such as <code>-client</code> which
+       causes it to switch to another client after the daemon initialization is
        complete. This allows, for example, running Tomcat as a non privileged
-       user while still being able to use privileged ports. Note that if you
+       client while still being able to use privileged ports. Note that if you
        use this option and start Tomcat as root, you'll need to disable the
        <code>org.apache.catalina.security.SecurityListener</code> check that
        prevents Tomcat starting when running as root.</p>

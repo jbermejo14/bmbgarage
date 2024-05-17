@@ -2,7 +2,7 @@
 04-May-2024 09:21:27.073 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
 04-May-2024 09:21:27.075 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@27e21083')
 04-May-2024 09:22:11.879 SEVERE [http-nio-8082-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -54,7 +54,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 04-May-2024 09:22:12.714 SEVERE [http-nio-8082-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -106,7 +106,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 04-May-2024 09:25:02.790 SEVERE [http-nio-8082-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -158,7 +158,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 04-May-2024 09:25:02.790 SEVERE [http-nio-8082-exec-21] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -210,7 +210,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 04-May-2024 09:25:02.790 SEVERE [http-nio-8082-exec-18] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -264,7 +264,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 04-May-2024 09:26:43.904 SEVERE [http-nio-8082-exec-30] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -335,7 +335,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:26:44.768 SEVERE [http-nio-8082-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -406,7 +406,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:36:51.909 SEVERE [http-nio-8082-exec-33] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -477,7 +477,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:36:53.319 SEVERE [http-nio-8082-exec-31] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -548,7 +548,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:37:10.379 SEVERE [http-nio-8082-exec-38] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -619,7 +619,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:38:59.499 SEVERE [http-nio-8082-exec-46] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -690,7 +690,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:38:59.837 SEVERE [http-nio-8082-exec-50] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -761,7 +761,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:17.805 SEVERE [http-nio-8082-exec-45] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -832,7 +832,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:18.515 SEVERE [http-nio-8082-exec-42] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -903,7 +903,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:18.658 SEVERE [http-nio-8082-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -974,7 +974,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:18.784 SEVERE [http-nio-8082-exec-51] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1045,7 +1045,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:18.942 SEVERE [http-nio-8082-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1116,7 +1116,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:19.082 SEVERE [http-nio-8082-exec-52] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1187,7 +1187,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:19.219 SEVERE [http-nio-8082-exec-49] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1258,7 +1258,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:20.225 SEVERE [http-nio-8082-exec-48] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwords}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwords}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1329,7 +1329,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:20.840 SEVERE [http-nio-8082-exec-53] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwords}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwords}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1400,7 +1400,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:21.006 SEVERE [http-nio-8082-exec-50] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwords}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwords}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1471,7 +1471,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:21.799 SEVERE [http-nio-8082-exec-54] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordsadsf}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordsadsf}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1542,7 +1542,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:21.957 SEVERE [http-nio-8082-exec-42] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordsadsf}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordsadsf}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1613,7 +1613,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:22.132 SEVERE [http-nio-8082-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordsadsf}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordsadsf}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1684,7 +1684,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:39:22.202 SEVERE [http-nio-8082-exec-51] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordsadsf}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordsadsf}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -3601,7 +3601,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 04-May-2024 09:44:00.292 SEVERE [http-nio-8082-exec-66] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -4261,7 +4261,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4286,7 +4286,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4344,7 +4344,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4369,7 +4369,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4493,7 +4493,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4518,7 +4518,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4675,7 +4675,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -4700,7 +4700,7 @@ role cannot be resolved
 15: </head>
 16: 
 17: <%
-18:     if (role.equals("user")) {
+18:     if (role.equals("client")) {
 19: %>
 20: <header data-bs-theme="dark">
 21:     <div class="navbar navbar-dark bg-dark shadow-sm">

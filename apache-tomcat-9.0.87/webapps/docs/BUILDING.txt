@@ -144,7 +144,7 @@ each release package has the appropriate line-endings.
 
 * NOTE: The default value of the base.path property configures the build script
   to download the libraries required to build Tomcat to the
-  ${user.home}/tomcat-build-libs directory.
+  ${client.home}/tomcat-build-libs directory.
 
 * NOTE: Users accessing the Internet through a proxy must use the properties
   file to indicate to Ant the proxy configuration.
@@ -155,7 +155,7 @@ each release package has the appropriate line-endings.
         proxy.use=true
         proxy.host=proxy.domain
         proxy.port=8080
-        proxy.user=username
+        proxy.client=username
         proxy.password=password
 
   See Apache Ant documentation for the <setproxy> task for details.
@@ -177,7 +177,7 @@ each release package has the appropriate line-endings.
     The path of the output directory can be controlled by specifying the
     "tomcat.output" property in the build.properties file.
 
-* NOTE: Do not run the build as the root user. Building and running Tomcat
+* NOTE: Do not run the build as the root client. Building and running Tomcat
   does not require root privileges.
 
 

@@ -30,20 +30,20 @@
 &lt;/head>
 &lt;body bgcolor="white">
 
-You are logged in as remote user
+You are logged in as remote client
 &lt;b>&lt;%= util.HTMLFilter.filter(request.getRemoteUser()) %>&lt;/b>
 in session &lt;b>&lt;%= session.getId() %>&lt;/b>&lt;br>&lt;br>
 
 &lt;%
   if (request.getUserPrincipal() != null) {
 %>
-    Your user principal name is
+    Your client principal name is
     &lt;b>&lt;%= util.HTMLFilter.filter(request.getUserPrincipal().getName()) %>&lt;/b>
     &lt;br>&lt;br>
 &lt;%
   } else {
 %>
-    No user principal could be identified.&lt;br>&lt;br>
+    No client principal could be identified.&lt;br>&lt;br>
 &lt;%
   }
 %>
@@ -67,7 +67,7 @@ in session &lt;b>&lt;%= session.getId() %>&lt;/b>&lt;br>&lt;br>
   }
 %>
 
-To check whether your user name has been granted a particular role,
+To check whether your client name has been granted a particular role,
 enter it here:
 &lt;form method="GET" action='&lt;%= response.encodeURL("index.jsp") %>'>
 &lt;input type="text" name="role" value="&lt;%= util.HTMLFilter.filter(role) %>">

@@ -1448,7 +1448,7 @@ Stacktrace:
 03-May-2024 19:20:01.306 SEVERE [http-nio-8082-exec-199] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:ss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:ss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1519,7 +1519,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:02.749 SEVERE [http-nio-8082-exec-198] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:ss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:ss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1590,7 +1590,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:03.594 SEVERE [http-nio-8082-exec-195] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:ss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:ss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1661,7 +1661,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:04.867 SEVERE [http-nio-8082-exec-186] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:ss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:ss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1732,7 +1732,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:06.311 SEVERE [http-nio-8082-exec-191] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:ssasd}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:ssasd}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1803,7 +1803,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:09.721 SEVERE [http-nio-8082-exec-200] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1874,7 +1874,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:11.092 SEVERE [http-nio-8082-exec-176] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -1945,7 +1945,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:11.919 SEVERE [http-nio-8082-exec-201] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -2016,7 +2016,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:12.140 SEVERE [http-nio-8082-exec-196] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -2087,7 +2087,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:12.493 SEVERE [http-nio-8082-exec-197] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -2513,7 +2513,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:20:32.901 SEVERE [http-nio-8082-exec-204] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -2584,7 +2584,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 19:24:41.419 SEVERE [http-nio-8082-exec-205] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -2757,7 +2757,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:29:04.607 SEVERE [http-nio-8082-exec-217] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3381,7 +3381,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:34:08.827 SEVERE [http-nio-8082-exec-210] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3433,7 +3433,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:34:09.331 SEVERE [http-nio-8082-exec-219] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3485,7 +3485,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:34:09.524 SEVERE [http-nio-8082-exec-211] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3537,7 +3537,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:35:11.268 SEVERE [http-nio-8082-exec-218] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3589,7 +3589,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:35:12.481 SEVERE [http-nio-8082-exec-217] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3641,7 +3641,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:35:12.873 SEVERE [http-nio-8082-exec-213] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3693,7 +3693,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:35:13.378 SEVERE [http-nio-8082-exec-220] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3745,7 +3745,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:35:18.681 SEVERE [http-nio-8082-exec-210] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3797,7 +3797,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:16.013 SEVERE [http-nio-8082-exec-229] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3849,7 +3849,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:16.972 SEVERE [http-nio-8082-exec-227] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3901,7 +3901,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:18.500 SEVERE [http-nio-8082-exec-225] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -3953,7 +3953,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:18.880 SEVERE [http-nio-8082-exec-222] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4005,7 +4005,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:19.149 SEVERE [http-nio-8082-exec-228] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4057,7 +4057,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:19.313 SEVERE [http-nio-8082-exec-230] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4109,7 +4109,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:19.474 SEVERE [http-nio-8082-exec-231] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4161,7 +4161,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:19.626 SEVERE [http-nio-8082-exec-232] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4213,7 +4213,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:20.059 SEVERE [http-nio-8082-exec-224] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4265,7 +4265,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:20.212 SEVERE [http-nio-8082-exec-226] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4317,7 +4317,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:37:20.346 SEVERE [http-nio-8082-exec-229] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4369,7 +4369,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:43:37.773 SEVERE [http-nio-8082-exec-235] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4421,7 +4421,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:43:50.183 SEVERE [http-nio-8082-exec-238] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4473,7 +4473,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:43:51.826 SEVERE [http-nio-8082-exec-230] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4525,7 +4525,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:46:15.336 SEVERE [http-nio-8082-exec-238] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4577,7 +4577,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:07.877 SEVERE [http-nio-8082-exec-240] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4629,7 +4629,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:09.172 SEVERE [http-nio-8082-exec-246] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4681,7 +4681,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:12.619 SEVERE [http-nio-8082-exec-247] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4733,7 +4733,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:13.194 SEVERE [http-nio-8082-exec-235] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4785,7 +4785,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:13.377 SEVERE [http-nio-8082-exec-248] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4837,7 +4837,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:13.612 SEVERE [http-nio-8082-exec-249] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4889,7 +4889,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:13.778 SEVERE [http-nio-8082-exec-250] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4941,7 +4941,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:47:13.931 SEVERE [http-nio-8082-exec-230] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -4993,7 +4993,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:02.509 SEVERE [http-nio-8082-exec-247] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5045,7 +5045,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:03.532 SEVERE [http-nio-8082-exec-251] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5097,7 +5097,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:03.918 SEVERE [http-nio-8082-exec-253] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5149,7 +5149,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:04.066 SEVERE [http-nio-8082-exec-257] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5201,7 +5201,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:04.220 SEVERE [http-nio-8082-exec-249] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5253,7 +5253,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:04.389 SEVERE [http-nio-8082-exec-258] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5305,7 +5305,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:50.873 SEVERE [http-nio-8082-exec-259] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5357,7 +5357,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:50.873 SEVERE [http-nio-8082-exec-261] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5409,7 +5409,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 19:51:51.526 SEVERE [http-nio-8082-exec-249] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at com.bermecar.servlet.UserServlet.doPost(UserServlet.java:38)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -5436,7 +5436,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 03-May-2024 19:51:52.162 SEVERE [http-nio-8082-exec-263] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at com.bermecar.servlet.UserServlet.doPost(UserServlet.java:38)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -5463,7 +5463,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 03-May-2024 19:51:52.317 SEVERE [http-nio-8082-exec-260] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "user" is null
+	java.lang.NullPointerException: Cannot invoke "com.bermecar.domain.User.getUsername()" because "client" is null
 		at com.bermecar.servlet.UserServlet.doPost(UserServlet.java:38)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
 		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
@@ -5490,7 +5490,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 		at java.base/java.lang.Thread.run(Thread.java:1583)
 03-May-2024 19:52:34.186 SEVERE [http-nio-8082-exec-260] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5542,7 +5542,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:12:13.871 SEVERE [http-nio-8082-exec-277] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5594,7 +5594,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:12:14.465 SEVERE [http-nio-8082-exec-278] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5646,7 +5646,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:33.616 SEVERE [http-nio-8082-exec-276] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5698,7 +5698,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:34.425 SEVERE [http-nio-8082-exec-271] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5750,7 +5750,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:34.601 SEVERE [http-nio-8082-exec-278] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5802,7 +5802,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:40.606 SEVERE [http-nio-8082-exec-281] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5854,7 +5854,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:40.964 SEVERE [http-nio-8082-exec-282] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5906,7 +5906,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:41.103 SEVERE [http-nio-8082-exec-274] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -5958,7 +5958,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:41.361 SEVERE [http-nio-8082-exec-277] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6010,7 +6010,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:48.321 SEVERE [http-nio-8082-exec-279] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6062,7 +6062,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:48.500 SEVERE [http-nio-8082-exec-284] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6114,7 +6114,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:48.657 SEVERE [http-nio-8082-exec-280] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6166,7 +6166,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:13:48.801 SEVERE [http-nio-8082-exec-281] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6218,7 +6218,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:42.008 SEVERE [http-nio-8082-exec-282] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6270,7 +6270,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:42.712 SEVERE [http-nio-8082-exec-285] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6322,7 +6322,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:43.797 SEVERE [http-nio-8082-exec-283] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6374,7 +6374,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:43.972 SEVERE [http-nio-8082-exec-287] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6426,7 +6426,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:44.142 SEVERE [http-nio-8082-exec-288] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6478,7 +6478,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:44.329 SEVERE [http-nio-8082-exec-286] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6530,7 +6530,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:44.558 SEVERE [http-nio-8082-exec-279] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6582,7 +6582,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:44.740 SEVERE [http-nio-8082-exec-284] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6634,7 +6634,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:44.887 SEVERE [http-nio-8082-exec-280] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6686,7 +6686,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:16:44.999 SEVERE [http-nio-8082-exec-281] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6738,7 +6738,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:17:07.041 SEVERE [http-nio-8082-exec-284] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -6792,7 +6792,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 03-May-2024 20:25:52.850 SEVERE [http-nio-8082-exec-289] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -6863,7 +6863,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:25:54.722 SEVERE [http-nio-8082-exec-279] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -6934,7 +6934,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:28:55.759 SEVERE [http-nio-8082-exec-297] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -7005,7 +7005,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:28:58.274 SEVERE [http-nio-8082-exec-289] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -7076,7 +7076,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:29:00.664 SEVERE [http-nio-8082-exec-293] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -7147,7 +7147,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:29:06.422 SEVERE [http-nio-8082-exec-298] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -7218,7 +7218,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:29:07.616 SEVERE [http-nio-8082-exec-295] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -7289,7 +7289,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:29:07.774 SEVERE [http-nio-8082-exec-299] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:passwordss}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:passwordss}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -8496,7 +8496,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:33:42.926 SEVERE [http-nio-8082-exec-318] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -8567,7 +8567,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:33:43.995 SEVERE [http-nio-8082-exec-315] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -8638,7 +8638,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:33:44.551 SEVERE [http-nio-8082-exec-319] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -8709,7 +8709,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:33:44.717 SEVERE [http-nio-8082-exec-320] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -8780,7 +8780,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:34:56.581 SEVERE [http-nio-8082-exec-321] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -8851,7 +8851,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:35:12.751 SEVERE [http-nio-8082-exec-322] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -9703,7 +9703,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:53:47.435 SEVERE [http-nio-8082-exec-323] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -9774,7 +9774,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:53:49.606 SEVERE [http-nio-8082-exec-329] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -9845,7 +9845,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:54:02.835 SEVERE [http-nio-8082-exec-321] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -9916,7 +9916,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 03-May-2024 20:54:03.806 SEVERE [http-nio-8082-exec-336] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
 	org.jdbi.v3.core.statement.UnableToExecuteStatementException: java.sql.SQLSyntaxErrorException: ORA-00904: "SHA1": identificador no válido
 
-https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+https://docs.oracle.com/error-help/db/ora-00904/ [statement:"SELECT * FROM users WHERE username = ? AND password = SHA1(?)", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.statement.SqlStatement.internalExecute(SqlStatement.java:1803)
 		at org.jdbi.v3.core.result.ResultProducers.lambda$createResultBearing$3(ResultProducers.java:94)
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterable.iterator(ResultSetResultIterable.java:51)
@@ -9985,7 +9985,7 @@ https://docs.oracle.com/error-help/db/ora-00904/
 		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:710)
 		... 57 more
 03-May-2024 20:54:47.751 SEVERE [http-nio-8082-exec-337] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -10037,7 +10037,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:54:48.471 SEVERE [http-nio-8082-exec-338] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -10089,7 +10089,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:55:01.039 SEVERE [http-nio-8082-exec-349] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
@@ -10141,7 +10141,7 @@ https://docs.oracle.com/error-help/db/ora-17006/
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
 		... 39 more
 03-May-2024 20:55:03.255 SEVERE [http-nio-8082-exec-344] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [com.bermecar.servlet.UserServlet] in context with path [/coches] threw exception
-	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:user,1:password}, named:{}, finder:[]}]
+	org.jdbi.v3.core.result.ResultSetException: Exception thrown mapping result set into return type [statement:"SELECT * FROM users WHERE username = ? AND password = ?", arguments:{positional:{0:client,1:password}, named:{}, finder:[]}]
 		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:85)
 		at org.jdbi.v3.core.result.ResultIterable.findFirst(ResultIterable.java:242)
 		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:294)
