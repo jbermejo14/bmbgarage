@@ -28,12 +28,12 @@ public class LoginServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         String username = request.getParameter("username");
-        String password = request.getParameter("password");
+        String userpassword = request.getParameter("Userpassword");
 
         try {
             Database.connect();
             User user = Database.jdbi.withExtension(UserDao.class,
-                    dao -> dao.getUser(username, password));
+                    dao -> dao.getUser(username, userpassword));
             if (user != null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("id", user.getId());

@@ -15,9 +15,9 @@ public interface UserDao {
     @UseRowMapper(org.bmbgarage.dao.UserMapper.class)
     User getUser(int id);
 
-    @SqlQuery("SELECT * FROM users WHERE username = ? AND password = ?")
+    @SqlQuery("SELECT * FROM users WHERE username = ? AND userpassword = ?")
     @UseRowMapper(org.bmbgarage.dao.UserMapper.class)
-    User getUser(String username, String password);
+    User getUser(String username, String userpassword);
 
     @SqlUpdate("INSERT INTO users (username, email, phonenumber, userpassword, role) VALUES (?, ?, ?, ?, ?)")
     int addUser(String username, String email, String phonenumber, String userpassword, String role);
