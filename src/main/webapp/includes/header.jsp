@@ -17,6 +17,10 @@
     header{
         background-color: #000 !important;
         color: #fff;
+
+    }
+    .navbar{
+    color:#93C572;
     }
 </style>
 <%

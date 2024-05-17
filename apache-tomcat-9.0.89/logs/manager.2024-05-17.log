@@ -52,3 +52,5 @@
 17-May-2024 18:33:01.061 INFO [http-nio-8084-exec-151] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to C:\Users\bslan\Documents\Projects\bmbgarage\bmbgarage\apache-tomcat-9.0.89\webapps\bmbgarage.war.tmp
 17-May-2024 18:33:53.870 INFO [http-nio-8084-exec-142] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/bmbgarage'
 17-May-2024 18:33:53.870 INFO [http-nio-8084-exec-142] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to C:\Users\bslan\Documents\Projects\bmbgarage\bmbgarage\apache-tomcat-9.0.89\webapps\bmbgarage.war.tmp
+17-May-2024 18:35:13.454 INFO [http-nio-8084-exec-162] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/bmbgarage'
+17-May-2024 18:35:13.454 INFO [http-nio-8084-exec-162] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to C:\Users\bslan\Documents\Projects\bmbgarage\bmbgarage\apache-tomcat-9.0.89\webapps\bmbgarage.war.tmp
