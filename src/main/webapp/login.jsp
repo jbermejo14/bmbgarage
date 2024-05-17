@@ -116,7 +116,7 @@ $(document).ready(function() {
 <div class="sidenav">
          <div class="login-main-text">
             <h2>BMBGarage<br></h2>
-            <p>Necesitas una cuenta para acceder</p>
+            <p>You need an account to continue</p>
          </div>
       </div>
       <div class="main">
@@ -124,15 +124,15 @@ $(document).ready(function() {
             <div class="login-form">
                 <form class="p-5">
                     <div class="form-group">
-                        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Usuario">
-                        <label for="floatingInput">Usuario</label>
+                        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="User">
+                        <label for="floatingInput">User</label>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                        <label for="floatingPassword">Contraseña</label>
+                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
                     </div>
-                    <button class="btn btn-black w-100" type="submit">Iniciar sesión</button>
-                    <p class="h5 fw-normal"><a href="signup.jsp" class="nav-link">¿No tienes cuenta? Registrate!</a></p>
+                    <button class="btn btn-black w-100" type="submit">Login</button>
+                    <p class="h5 fw-normal"><a href="signup.jsp" class="nav-link">No Account? Login!</a></p>
                 </form>
             </div>
          </div>

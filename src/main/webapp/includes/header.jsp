@@ -39,8 +39,7 @@
         <div class="container">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li><a href="/bermecars" class="nav-link px-2 text-secondary">Home</a></li>
-              <li><a href="reservation.jsp" class="nav-link px-2 text-white">Reservas</a></li>
-              <li><a href="user-profile.jsp" class="nav-link px-2 text-white">Perfil</a></li>
+              <li><a href="user-profile.jsp" class="nav-link px-2 text-white">Profile</a></li>
         </div>
         <button type="button" class="btn btn-outline-light me-5"><a href="logout" title="logout" class="text-white text-decoration-none">Logout</a></button>
     </div>
@@ -53,9 +52,8 @@
         <div class="container">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li><a href="/bermecars" class="nav-link px-2 text-secondary">Home</a></li>
-              <li><a href="reservation.jsp" class="nav-link px-2 text-white">Reservas</a></li>
-              <li><a href="user-profile.jsp" class="nav-link px-2 text-white">Perfil</a></li>
-              <li><a href="edit-car.jsp" class="nav-link px-2 text-white">Editar</a></li>
+              <li><a href="user-profile.jsp" class="nav-link px-2 text-white">Profile</a></li>
+              <li><a href="edit-car.jsp" class="nav-link px-2 text-white">Edit</a></li>
         </div>
 
         <button type="button" class="btn btn-outline-light text-white me-2 mr-2"><a href="logout" title="logout" class="text-decoration-none">Logout</a></button>

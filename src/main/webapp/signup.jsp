@@ -114,7 +114,7 @@ $(document).ready(function() {
 <div class="sidenav">
          <div class="login-main-text">
             <h2>BMBGarage<br></h2>
-            <p>Necesitas una cuenta para acceder</p>
+            <p>You need an account to continue</p>
          </div>
       </div>
       <div class="main">
@@ -126,19 +126,19 @@ $(document).ready(function() {
                         <label for="floatingInput">Email</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="telephone" class="form-control" id="floatingTelephone" placeholder="Telephone">
-                        <label for="floatingInput">Telefono</label>
+                        <input type="text" name="telephone" class="form-control" id="floatingTelephone" placeholder="Phone number">
+                        <label for="floatingInput">Phone number</label>
                     </div>
                     <div class="form-group py-2">
-                        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="Usuario">
-                        <label for="floatingInput">Usuario</label>
+                        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="User">
+                        <label for="floatingInput">User</label>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="userpassword" class="form-control" id="floatingPassword" placeholder="Contraseña">
-                        <label for="floatingPassword">Contraseña</label>
+                        <input type="password" name="userpassword" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
                     </div>
-                    <button class="btn btn-black w-100" type="submit">Registrarse</button>
-                    <p class="h5 fw-normal"><a href="login.jsp" class="nav-link">¿Tienes ya cuenta? Inicia Sesión!</a></p>
+                    <button class="btn btn-black w-100" type="submit">Register</button>
+                    <p class="h5 fw-normal"><a href="login.jsp" class="nav-link">Already have an account? Login!</a></p>
                 </form>
                 <div id="result"></div>
             </div>

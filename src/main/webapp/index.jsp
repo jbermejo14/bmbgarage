@@ -15,7 +15,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bermecars</title>
+<title>BMBGarage</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -36,7 +36,7 @@
         <input type="text" class="form-control" placeholder="Búsqueda" name="search" id="search-input">
       </div>
       <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3" id="search-button">Buscar</button>
+        <button type="submit" class="btn btn-primary mb-3" id="search-button">Search</button>
       </div>
     </form>
   </section>
@@ -66,7 +66,7 @@
               <p class="card-text"><%= car.getCarmodel() %></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="view-car.jsp?id=<%= car.getId() %>" type="button" class="btn btn-sm btn-outline-primary">Ver</a></div>
+                  <a href="view-car.jsp?id=<%= car.getId() %>" type="button" class="btn btn-sm btn-outline-primary">Details</a></div>
             <small class="text-body-secondary"><%= car.getPrice() %> €</small>
               </div>
             </div>
