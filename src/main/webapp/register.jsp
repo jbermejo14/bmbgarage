@@ -16,6 +16,7 @@
 <style>
 body {
     font-family: "Lato", sans-serif;
+
 }
 
 
@@ -28,7 +29,7 @@ body {
 
 .sidenav {
     height: 100%;
-    background-color: #000;
+    background-color: #93C572;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -75,16 +76,19 @@ body {
 .login-main-text{
     margin-top: 20%;
     padding: 60px;
-    color: #fff;
+    color: #000000;
+    font-size:25px;
 }
 
 .login-main-text h2{
     font-weight: 300;
+    font-size: 80px;
+    font-family: arial;
 }
 
 .btn-black{
-    background-color: #000 !important;
-    color: #fff;
+    background-color: #93C572 !important;
+    color: #000000;
 }
 </style>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

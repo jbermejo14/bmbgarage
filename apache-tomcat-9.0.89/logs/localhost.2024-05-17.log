@@ -175,3 +175,685 @@ https://docs.oracle.com/error-help/db/ora-01017/
 		at org.jdbi.v3.core.Jdbi.lambda$create$2(Jdbi.java:152)
 		at org.jdbi.v3.core.Jdbi.open(Jdbi.java:319)
 		... 26 more
+17-May-2024 17:31:16.272 SEVERE [http-nio-8084-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [org.bmbgarage.servlet.LoginServlet] lanzó excepción
+	org.jdbi.v3.core.ConnectionException: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+https://docs.oracle.com/error-help/db/ora-01017/
+		at org.jdbi.v3.core.Jdbi.open(Jdbi.java:341)
+		at org.bmbgarage.dao.Database.connect(Database.java:20)
+		at org.bmbgarage.servlet.LoginServlet.doPost(LoginServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+	Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+https://docs.oracle.com/error-help/db/ora-01017/
+		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+		at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1795)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:866)
+		at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1102)
+		at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:456)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:508)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1676)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1421)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1368)
+		at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1805)
+		at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1748)
+		at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:960)
+		at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1126)
+		at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+		at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:825)
+		at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:651)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+		at org.jdbi.v3.core.Jdbi.lambda$create$2(Jdbi.java:152)
+		at org.jdbi.v3.core.Jdbi.open(Jdbi.java:319)
+		... 26 more
+17-May-2024 17:31:16.845 SEVERE [http-nio-8084-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [org.bmbgarage.servlet.LoginServlet] lanzó excepción
+	org.jdbi.v3.core.ConnectionException: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+https://docs.oracle.com/error-help/db/ora-01017/
+		at org.jdbi.v3.core.Jdbi.open(Jdbi.java:341)
+		at org.bmbgarage.dao.Database.connect(Database.java:20)
+		at org.bmbgarage.servlet.LoginServlet.doPost(LoginServlet.java:30)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+	Caused by: java.sql.SQLException: ORA-01017: nombre de usuario/contraseña no válidos; conexión denegada
+
+https://docs.oracle.com/error-help/db/ora-01017/
+		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:702)
+		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:603)
+		at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:598)
+		at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1795)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:866)
+		at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:1102)
+		at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:456)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:508)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTHWithO5Logon(T4CTTIoauthenticate.java:1676)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1421)
+		at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1368)
+		at oracle.jdbc.driver.T4CConnection.authenticateWithPassword(T4CConnection.java:1805)
+		at oracle.jdbc.driver.T4CConnection.authenticateUserForLogon(T4CConnection.java:1748)
+		at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:960)
+		at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1126)
+		at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:104)
+		at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:825)
+		at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:651)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+		at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+		at org.jdbi.v3.core.Jdbi.lambda$create$2(Jdbi.java:152)
+		at org.jdbi.v3.core.Jdbi.open(Jdbi.java:319)
+		... 26 more
+17-May-2024 17:43:23.918 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+17-May-2024 17:43:23.918 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+17-May-2024 17:43:23.919 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3a00b15d')
+17-May-2024 17:58:46.338 SEVERE [http-nio-8084-exec-22] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [35] en el archivo jsp: [/index.jsp]
+car cannot be resolved
+32: <main>
+33:   <section class="py-5 text-center container">
+34:     <form class="row g-2" id="search-form" method="GET">
+35:       <img src="../images/<%= car.getImage()%>"/>
+36:       <div class="mb-1 col">
+37:         <input type="text" class="form-control" placeholder="Búsqueda" name="search" id="search-input">
+38:       </div>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [35] en el archivo jsp: [/index.jsp]
+car cannot be resolved
+32: <main>
+33:   <section class="py-5 text-center container">
+34:     <form class="row g-2" id="search-form" method="GET">
+35:       <img src="../images/<%= car.getImage()%>"/>
+36:       <div class="mb-1 col">
+37:         <input type="text" class="form-control" placeholder="Búsqueda" name="search" id="search-input">
+38:       </div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:553)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:04:01.315 SEVERE [http-nio-8084-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17006: Nombre de columna no válido
+https://docs.oracle.com/error-help/db/ora-17006/
+		at oracle.jdbc.driver.OracleStatement.getColumnIndexPrimitive(OracleStatement.java:4456)
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:4414)
+		at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:292)
+		at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:648)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy6/jdk.proxy6.$Proxy85.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:04:04.541 SEVERE [http-nio-8084-exec-40] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17006: Nombre de columna no válido
+https://docs.oracle.com/error-help/db/ora-17006/
+		at oracle.jdbc.driver.OracleStatement.getColumnIndexPrimitive(OracleStatement.java:4456)
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:4414)
+		at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:292)
+		at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:648)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy6/jdk.proxy6.$Proxy85.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:04:18.763 SEVERE [http-nio-8084-exec-41] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17006: Nombre de columna no válido
+https://docs.oracle.com/error-help/db/ora-17006/
+		at oracle.jdbc.driver.OracleStatement.getColumnIndexPrimitive(OracleStatement.java:4456)
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:4414)
+		at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:292)
+		at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:648)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy6/jdk.proxy6.$Proxy85.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:06:14.979 SEVERE [http-nio-8084-exec-47] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17006: Nombre de columna no válido
+https://docs.oracle.com/error-help/db/ora-17006/
+		at oracle.jdbc.driver.OracleStatement.getColumnIndexPrimitive(OracleStatement.java:4456)
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:4414)
+		at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:292)
+		at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:648)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy6/jdk.proxy6.$Proxy85.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:06:47.839 SEVERE [http-nio-8084-exec-56] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17006: Nombre de columna no válido
+https://docs.oracle.com/error-help/db/ora-17006/
+		at oracle.jdbc.driver.OracleStatement.getColumnIndexPrimitive(OracleStatement.java:4456)
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:4414)
+		at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:292)
+		at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:648)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy6/jdk.proxy6.$Proxy85.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:08:44.698 SEVERE [http-nio-8084-exec-51] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17006: Nombre de columna no válido
+https://docs.oracle.com/error-help/db/ora-17006/
+		at oracle.jdbc.driver.OracleStatement.getColumnIndexPrimitive(OracleStatement.java:4456)
+		at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:4414)
+		at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:292)
+		at oracle.jdbc.driver.GeneratedResultSet.getString(GeneratedResultSet.java:648)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy7/jdk.proxy7.$Proxy107.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
+17-May-2024 18:14:05.559 SEVERE [http-nio-8084-exec-58] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/bmbgarage] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [55]
+
+52:           Database.connect();
+53:           List<Car> cars = null;
+54:           if (search.isEmpty()) {
+55:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getAllCars());
+56:           } else {
+57:             final String searchTerm = search;
+58:             cars = Database.jdbi.withExtension(CarDao.class, dao -> dao.getCars(searchTerm));
+
+
+Stacktrace:] con causa raíz
+	java.sql.SQLException: ORA-17004: Tipo de columna no válido: getInt not implemented for class oracle.jdbc.driver.T4CDateAccessor
+https://docs.oracle.com/error-help/db/ora-17004/
+		at oracle.jdbc.driver.GeneratedAccessor.getInt(GeneratedAccessor.java:377)
+		at oracle.jdbc.driver.GeneratedStatement.getInt(GeneratedStatement.java:172)
+		at oracle.jdbc.driver.GeneratedScrollableResultSet.getInt(GeneratedScrollableResultSet.java:258)
+		at oracle.jdbc.driver.GeneratedResultSet.getInt(GeneratedResultSet.java:608)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:20)
+		at org.bmbgarage.dao.CarMapper.map(CarMapper.java:11)
+		at org.jdbi.v3.core.result.internal.ResultSetResultIterator.next(ResultSetResultIterator.java:83)
+		at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+		at org.jdbi.v3.core.result.ResultIterator.forEachRemaining(ResultIterator.java:39)
+		at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+		at org.jdbi.v3.core.result.ResultIterable.collect(ResultIterable.java:341)
+		at org.jdbi.v3.sqlobject.statement.internal.ResultReturner$CollectedResultReturner.mappedResult(ResultReturner.java:292)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.lambda$configureReturner$0(SqlQueryHandler.java:65)
+		at org.jdbi.v3.sqlobject.statement.internal.CustomizingStatementHandler.invoke(CustomizingStatementHandler.java:194)
+		at org.jdbi.v3.sqlobject.statement.internal.SqlQueryHandler.invoke(SqlQueryHandler.java:27)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.lambda$invoke$0(ExtensionMetadata.java:330)
+		at org.jdbi.v3.core.AbstractHandleSupplier.invokeInContext(AbstractHandleSupplier.java:36)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.call(ExtensionMetadata.java:348)
+		at org.jdbi.v3.core.extension.ExtensionMetadata$ExtensionHandlerInvoker.invoke(ExtensionMetadata.java:331)
+		at org.jdbi.v3.core.extension.ExtensionFactoryDelegate.lambda$attach$0(ExtensionFactoryDelegate.java:117)
+		at jdk.proxy8/jdk.proxy8.$Proxy129.getAllCars(Unknown Source)
+		at org.apache.jsp.index_jsp.lambda$0(index_jsp.java:257)
+		at org.jdbi.v3.core.Jdbi.callWithExtension(Jdbi.java:506)
+		at org.jdbi.v3.core.Jdbi.withExtension(Jdbi.java:493)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:257)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:388)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1623)
