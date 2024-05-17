@@ -24,7 +24,7 @@ public class LoginServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         String username = request.getParameter("username");
-        String userpassword = request.getParameter("Userpassword");
+        String userpassword = request.getParameter("userpassword");
 
         try {
             Database.connect();
