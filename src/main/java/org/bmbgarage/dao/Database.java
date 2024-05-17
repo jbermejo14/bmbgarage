@@ -1,4 +1,4 @@
-package org.bmbgarage.domain;
+package org.bmbgarage.dao;
 
 import org.jdbi.v3.core.Handle;
 import org.jdbi.v3.core.Jdbi;
