@@ -11,15 +11,15 @@ import java.util.List;
 
 public interface CarDao {
 
-    @SqlQuery("SELECT * FROM cars")
+    @SqlQuery("SELECT * FROM Cars")
     @UseRowMapper(CarMapper.class)
     List<Car> getAllCars();
 
-    @SqlQuery("SELECT * FROM cars WHERE id = ?")
+    @SqlQuery("SELECT * FROM Cars WHERE id = ?")
     @UseRowMapper(CarMapper.class)
     Car getCar(int id);
 
-    @SqlQuery("SELECT * FROM cars WHERE brand LIKE '%' || :searchTerm || '%' ")
+    @SqlQuery("SELECT * FROM Cars WHERE brand LIKE '%' || :searchTerm || '%' ")
     @UseRowMapper(CarMapper.class)
     List<Car> getCars(@Bind("searchTerm") String searchTerm);
 

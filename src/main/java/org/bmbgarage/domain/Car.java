@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class Car {
     private int id;
     private Client client;
-    private String license_plate;
+    private String licenseplate;
     private String brand;
     private String carmodel;
     private int dateregistration;
