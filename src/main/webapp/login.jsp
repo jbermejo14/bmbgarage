@@ -132,7 +132,7 @@ $(document).ready(function() {
                         <label for="floatingPassword">Contraseña</label>
                     </div>
                     <button class="btn btn-black w-100" type="submit">Iniciar sesión</button>
-                    <p class="h5 fw-normal"><a href="register.jsp" class="nav-link">¿No tienes cuenta? Registrate!</a></p>
+                    <p class="h5 fw-normal"><a href="signup.jsp" class="nav-link">¿No tienes cuenta? Registrate!</a></p>
                 </form>
             </div>
          </div>

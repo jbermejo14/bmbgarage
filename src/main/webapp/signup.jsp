@@ -101,7 +101,7 @@ $(document).ready(function() {
             statusCode: {
                 200: function(response) {
                     if (response === "ok") {
-                        window.location.href = "/bermecars";
+                        window.location.href = "/bmbgarage";
                     } else {
                         $("#result").html(response);
                     }
