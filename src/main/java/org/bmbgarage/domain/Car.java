@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -12,7 +14,7 @@ public class Car {
     private String licenseplate;
     private String brand;
     private String carmodel;
-    private int dateregistration;
+    private Date dateregistration;
     private float price;
     private String image;
 }
