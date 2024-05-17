@@ -19,11 +19,11 @@ public interface ClientDao {
     @UseRowMapper(org.bmbgarage.dao.ClientMapper.class)
     Client getClient(String username, String userpassword);
 
-    @SqlUpdate("INSERT INTO clients (username, email, phonenumber, userpassword, role) VALUES (?, ?, ?, ?, ?)")
-    int addClient(String username, String email, String phonenumber, String userpassword, String role);
+    @SqlUpdate("INSERT INTO clients (username, email, phonenumber, userpassword, rol) VALUES (?, ?, ?, ?, ?)")
+    int addClient(String username, String email, String phonenumber, String userpassword, String rol);
 
-    @SqlUpdate("UPDATE clients SET username = ?, password = ?, telephone = ? WHERE id = ?")
-    int updateClient(String username, String password, int telephone, int id);
+    @SqlUpdate("UPDATE clients SET username = ?, userpassword = ?, telephone = ? WHERE id = ?")
+    int updateClient(String username, String userpassword, int telephone, int id);
 
     @SqlUpdate("DELETE FROM clients WHERE id = ?")
     int removeClient(int id);

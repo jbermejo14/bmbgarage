@@ -34,7 +34,7 @@ public class LoginServlet extends HttpServlet {
                 HttpSession session = request.getSession();
                 session.setAttribute("id", client.getId());
                 session.setAttribute("username", client.getUsername());
-                session.setAttribute("role", client.getRole());
+                session.setAttribute("role", client.getRol());
                 response.getWriter().print("ok");
             } else {
                 sendError("El usuario no existe", response);

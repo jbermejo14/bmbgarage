@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import static org.bmbgarage.util.ErrorUtils.sendError;
 
 
-@WebServlet("/signup")
+@WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 
     @Override
@@ -38,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("id", client.getId());
             session.setAttribute("username", client.getUsername());
-            session.setAttribute("role", client.getRole());
+            session.setAttribute("role", client.getRol());
             response.getWriter().print("ok");
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();

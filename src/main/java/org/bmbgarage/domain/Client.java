@@ -13,5 +13,5 @@ public class Client {
     private String email;
     private String phonenumber;
     private String userpassword;
-    private String role;
+    private String rol;
 }
