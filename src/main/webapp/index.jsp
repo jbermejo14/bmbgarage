@@ -8,7 +8,7 @@
 
 <% if (role.equals("anonymous")) { %>
     <script type="text/javascript">
-       window.location.href = "/org.bmbgarage/login.jsp";
+       window.location.href = "/bmbgarage/login.jsp";
     </script>
 <%} else { %>
 <!doctype html>
