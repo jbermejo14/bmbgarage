@@ -14,7 +14,7 @@ public class Car {
     private String licenseplate;
     private String brand;
     private String carmodel;
-    private Date dateregistration;
+    private int dateregistration;
     private float price;
     private String image;
 }
