@@ -29,7 +29,7 @@ public class RegisterServlet extends HttpServlet {
         String userpassword = request.getParameter("userpassword");
         String email = request.getParameter("email");
         String phonenumber = request.getParameter("phonenumber");
-        String role = "user";
+        String role = "admin";
 
         try {
             Database.connect();
