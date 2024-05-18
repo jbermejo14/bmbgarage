@@ -21,6 +21,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
+
+<style>
+    html {
+    background-color: #008C3D;
+    }
+    main {
+    background-color: #008C3D;
+    }
+</style>
+
+
 <body>
 
 <script>
