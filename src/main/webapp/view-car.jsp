@@ -26,8 +26,15 @@
                     <%
                        }
                     %>
+
                 </div>
             </div>
         </div>
+        <button class="btn btn-secondary" onclick="pageBack()">Back</button>
     </main>
+    <script>
+            function pageBack() {
+                window.history.back();
+            }
+        </script>
 </body>
