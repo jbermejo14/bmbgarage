@@ -145,20 +145,21 @@ $(document).ready(function() {
  </div>
 </div>
 <div class="main">
- <div class="col-md-12 col-sm-12">
-    <div class="login-form">
-        <form class="p-5">
-            <div class="form-group">
-                <input type="text" name="username" class="form-control" id="floatingInput" placeholder="User">
-                <label for="floatingInput">User</label>
-            </div>
-            <div class="form-group">
-                <input type="password" name="userpassword" class="form-control" id="floatingpassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-            <button class="btn btn-black w-100" type="submit">Login</button>
-            <p class="h5 fw-normal"><a href="register.jsp" class="nav-link">No Account? Register!</a></p>
-        </form>
+    <div class="col-md-12 col-sm-12">
+        <div class="login-form">
+            <form class="p-5">
+                <div class="form-group py-2">
+                    <input type="text" name="username" class="form-control" id="floatingInput" placeholder="User">
+                    <label for="floatingInput">User</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="userpassword" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <button class="btn btn-black w-100" type="submit">Login</button>
+                <p class="h5 fw-normal"><a href="register.jsp" class="nav-link">No Account? Register!</a></p>
+            </form>
+            <div id="result"></div>
+        </div>
     </div>
- </div>
 </div>
