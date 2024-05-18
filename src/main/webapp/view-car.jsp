@@ -15,6 +15,7 @@
             <div class="card text-center">
                 <div class="card-header">Coche</div>
                 <div class="card-body">
+                    <img src="../bmbpictures/<%= car.getImage()%>"/>
                     <h5 class="card-title"><%= car.getBrand() %></h5>
                     <p class="card-text"><%= car.getCarmodel() %></p>
                     <p class="card-text"><%= car.getPrice() %></p>
