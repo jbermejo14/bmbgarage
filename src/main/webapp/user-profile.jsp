@@ -17,8 +17,7 @@
         response.sendRedirect("index.jsp");
     }
     Database.connect();
-    final int theclientid = id;
-    Client client = Database.jdbi.withExtension(ClientDao.class, dao -> dao.getClient(theclientid));
+    Client client = Database.jdbi.withExtension(ClientDao.class, dao -> dao.getClient(id));
 %>
 <main>
     <section class="py-5 text-center container">
