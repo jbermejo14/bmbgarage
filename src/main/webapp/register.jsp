@@ -19,8 +19,6 @@ body {
 
 }
 
-
-
 .main-head{
     height: 150px;
     background: #FFF;

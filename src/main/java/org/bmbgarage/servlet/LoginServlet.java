@@ -26,6 +26,7 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String userpassword = request.getParameter("userpassword");
         sendError("El usuario no existe" + username + userpassword, response);
+
         try {
             Database.connect();
             Client client = Database.jdbi.withExtension(ClientDao.class, dao -> dao.getClient(username, userpassword));

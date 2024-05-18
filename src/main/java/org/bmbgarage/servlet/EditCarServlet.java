@@ -39,7 +39,7 @@ public class EditCarServlet extends HttpServlet {
             String licenseplate = request.getParameter("licenseplate");
             String brand = request.getParameter("brand");
             String carmodel = request.getParameter("carmodel");
-            int dateregistration = Integer.parseInt(request.getParameter("dateregistration"));
+            int dateregistration = 2024;
             float price = Float.parseFloat(request.getParameter("price"));
 
             String finalFilename2 = "no-photo.png";

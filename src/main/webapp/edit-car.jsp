@@ -75,10 +75,6 @@
                     value="XXXX-XXX">
             </div>
             <div class="mb-3">
-                <label for="date" class="form-label">Date</label>
-                <input type="number" name="date" class="form-control" id="date">
-            </div>
-            <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
                 <input type="number" name="price" class="form-control" id="price">
             </div>
