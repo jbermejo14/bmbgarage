@@ -116,36 +116,36 @@ $(document).ready(function() {
 });
 </script>
 <div class="sidenav">
-         <div class="login-main-text">
-            <h2>BMBGarage<br></h2>
-            <p>You need an account to continue</p>
-         </div>
-      </div>
-      <div class="main">
-         <div class="col-md-12 col-sm-12">
-            <div class="login-form">
-                <form class="p-5">
-                    <div class="form-group">
-                        <input type="text" name="email" class="form-control" id="floatingEmail" placeholder="email@email.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="telephone" class="form-control" id="floatingTelephone" placeholder="Phone number">
-                        <label for="floatingInput">Phone number</label>
-                    </div>
-                    <div class="form-group py-2">
-                        <input type="text" name="username" class="form-control" id="floatingInput" placeholder="User">
-                        <label for="floatingInput">User</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="password" name="userpassword" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                    </div>
-                    <button class="btn btn-black w-100" type="submit">Register</button>
-                    <p class="h5 fw-normal"><a href="login.jsp" class="nav-link">Already have an account? Login!</a></p>
-                </form>
-                <div id="result"></div>
-            </div>
-         </div>
-      </div>
+    <div class="login-main-text">
+        <h2>BMBGarage<br></h2>
+        <p>You need an account to continue</p>
+    </div>
+</div>
+<div class="main">
+    <div class="col-md-12 col-sm-12">
+        <div class="login-form">
+            <form class="p-5">
+                <div class="form-group">
+                    <input type="text" name="email" class="form-control" id="floatingEmail" placeholder="email@email.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="telephone" class="form-control" id="floatingTelephone" placeholder="Phone number">
+                    <label for="floatingInput">Phone number</label>
+                </div>
+                <div class="form-group py-2">
+                    <input type="text" name="username" class="form-control" id="floatingInput" placeholder="User">
+                    <label for="floatingInput">User</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="userpassword" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <button class="btn btn-black w-100" type="submit">Register</button>
+                <p class="h5 fw-normal"><a href="login.jsp" class="nav-link">Already have an account? Login!</a></p>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+</div>
 </main>
