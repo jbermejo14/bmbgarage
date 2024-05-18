@@ -37,7 +37,7 @@
   <section class="py-5 text-center container">
     <form class="row g-2" id="search-form" method="GET">
       <div class="mb-1 col">
-        <input type="text" class="form-control" placeholder="Búsqueda" name="search" id="search-input">
+        <input type="text" class="form-control" placeholder="Search..." name="search" id="search-input">
       </div>
       <div class="col-auto">
         <button type="submit" class="btn btn-primary mb-3" id="search-button">Search</button>

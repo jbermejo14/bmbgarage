@@ -13,7 +13,7 @@
         %>
         <div class="container">
             <div class="card text-center">
-                <div class="card-header">Coche</div>
+                <div class="card-header">Car</div>
                 <div class="card-body">
                     <img src="../bmbpictures/<%= car.getImage()%>"/>
                     <h5 class="card-title"><%= car.getBrand() %></h5>
