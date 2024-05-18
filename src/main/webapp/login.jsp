@@ -153,7 +153,7 @@ $(document).ready(function() {
                 <label for="floatingInput">User</label>
             </div>
             <div class="form-group">
-                <input type="password" name="userpassword" class="form-control" id="floatingUserpassword" placeholder="Password">
+                <input type="password" name="userpassword" class="form-control" id="floatingpassword" placeholder="Password">
                 <label for="floatingPassword">Password</label>
             </div>
             <button class="btn btn-black w-100" type="submit">Login</button>

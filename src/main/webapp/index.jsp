@@ -72,7 +72,7 @@
         %>
         <div class="col">
           <div class="card shadow-sm h-max w-100">
-            <img src="/images/<%= car.getImage()%>"/>
+            <img src="../bmbpictures/<%= car.getImage()%>"/>
             <div class="card-body">
               <p class="card-text"><strong><%= car.getBrand() %></strong></p>
               <p class="card-text"><%= car.getCarmodel() %></p>

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <web-app>
-    <display-name>BMB Garage</display-name>
+    <display-name>BMBGarage</display-name>
+
+    <context-param>
+        <description>Ruta donde guardar las imagenes</description>
+        <param-name>image-path</param-name>
+        <param-value>\Users\jimmy\Desktop\apache-tomcat-9.0.87/webapps/bmbpictures</param-value>
+    </context-param>
 </web-app>
