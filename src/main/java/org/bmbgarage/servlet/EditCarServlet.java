@@ -47,7 +47,7 @@ public class EditCarServlet extends HttpServlet {
 
             int affectedRows = Database.jdbi.withExtension(CarDao.class,
                     dao -> dao.addCar(licenseplate, brand, carmodel, dateregistration, price, finalFilename2));
-            sendMessage("Coche registrado correctamente", response);
+            sendMessage("Car registered", response);
 
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
