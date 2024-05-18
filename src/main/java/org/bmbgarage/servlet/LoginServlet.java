@@ -25,7 +25,6 @@ public class LoginServlet extends HttpServlet {
 
         String username = request.getParameter("username");
         String userpassword = request.getParameter("userpassword");
-        sendError("El usuario no existe" + username + userpassword, response);
 
         try {
             Database.connect();
@@ -35,9 +34,8 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("id", client.getId());
                 session.setAttribute("username", client.getUsername());
                 session.setAttribute("role", client.getRol());
-                response.getWriter().print("ok");
             } else {
-                sendError("El usuario no existe", response);
+                sendError("El usuario no existe" + username + userpassword, response);
             }
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
