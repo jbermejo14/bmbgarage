@@ -4,7 +4,6 @@ import org.bmbgarage.dao.Database;
 import org.bmbgarage.dao.ClientDao;
 import org.bmbgarage.domain.Client;
 
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -29,7 +28,7 @@ public class RegisterServlet extends HttpServlet {
         String userpassword = request.getParameter("userpassword");
         String email = request.getParameter("email");
         String phonenumber = request.getParameter("phonenumber");
-        String role = "admin";
+        String role = "user";
 
         try {
             Database.connect();

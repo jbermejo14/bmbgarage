@@ -79,7 +79,7 @@
                 <input type="number" name="price" class="form-control" id="price">
             </div>
             <div class="col-12">
-                <button class="btn btn-black w-100" id="edit-button" type="submit">Send</button>
+                <button class="btn btn bg-success w-100 text-white" id="edit-button" type="submit">Send</button>
             </div>
         </form>
         <div id="result"></div>

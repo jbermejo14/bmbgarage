@@ -5,6 +5,6 @@
     <context-param>
         <description>Ruta donde guardar las imagenes</description>
         <param-name>image-path</param-name>
-        <param-value>\Users\jimmy\Desktop\apache-tomcat-9.0.87/webapps/bmbpictures</param-value>
+        <param-value>\Users\bslan\Documents\Projects\bmbgarage\bmbgarage\apache-tomcat-9.0.89\webapps\bmbpictures</param-value>
     </context-param>
 </web-app>
