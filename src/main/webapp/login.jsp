@@ -14,9 +14,12 @@
 
 </head>
 <style>
+
 body {
     font-family: "Lato", sans-serif;
 }
+
+
 
 .main-head{
     height: 150px;
@@ -26,7 +29,7 @@ body {
 
 .sidenav {
     height: 100%;
-    background-color: #000;
+    background-color: #93C572;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -34,6 +37,23 @@ body {
 
 .main {
     padding: 0px 10px;
+}
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #000000;
+    font-size:25px;
+}
+.login-main-text h2{
+    font-weight: 300;
+    font-size: 80px;
+    font-family: arial;
+}
+
+.btn-black{
+    background-color: #93C572 !important;
+    color: #000000;
 }
 
 @media screen and (max-height: 450px) {
@@ -76,18 +96,27 @@ body {
 .login-main-text{
     margin-top: 20%;
     padding: 60px;
-    color: #fff;
+    font-size:25px;
+    color:#000;
+    font-family: arial;
 }
 
 .login-main-text h2{
     font-weight: 300;
+    font-size: 80px;
+    font-family: arial;
+    color:#000;
 }
 
 .btn-black{
-    background-color: #000 !important;
-    color: #fff;
+    background-color: #93C572 !important;
+    color: #000000;
 }
+
 </style>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     $("form").on("submit", function(event) {
@@ -109,10 +138,6 @@ $(document).ready(function() {
     });
 });
 </script>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
 <div class="sidenav">
  <div class="login-main-text">
     <h2>BMBGarage<br></h2>
