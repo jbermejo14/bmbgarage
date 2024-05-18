@@ -1,0 +1,5 @@
+<% if (role.equals("anonymous")) { %>
+    <script type="text/javascript">
+       window.location.href = "/bmbgarage/login.jsp";
+    </script>
+<%} else { %>
