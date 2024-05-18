@@ -1,8 +1,8 @@
-<%@ page import="com.bermecar.dao.Database" %>
-<%@ page import="com.bermecar.dao.CarDao" %>
-<%@ page import="com.bermecar.domain.Car" %>
-<%@ page import="com.bermecar.domain.User" %>
-<%@ page import="com.bermecar.dao.UserDao" %>
+<%@ page import="org.bmbgarage.dao.Database" %>
+<%@ page import="org.bmbgarage.dao.CarDao" %>
+<%@ page import="org.bmbgarage.domain.Car" %>
+<%@ page import="org.bmbgarage.domain.User" %>
+<%@ page import="org.bmbgarage.dao.UserDao" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%@include file="includes/header.jsp"%>
